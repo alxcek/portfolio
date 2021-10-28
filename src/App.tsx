@@ -1,11 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
-import Hamburger from "./components/hamburger-button/hamburger.component";
+import Loader from "./components/loader/loader.component";
 
 function App() {
-  return (
-      <Hamburger/>
-  );
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
+    }, [])
+
+    return (
+        <div>
+            {
+                loading ? (
+                    <Loader/>
+                ) : (
+                    <div><h2>Testing</h2></div>
+                )
+            }
+        </div>
+    );
 }
 
 export default App;
