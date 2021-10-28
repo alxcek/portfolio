@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  background: whitesmoke;
+  background: #0e0e0e;
 }
 
 .content {
@@ -15,10 +15,10 @@
   height: 160px;
   overflow: hidden;
 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 35px;
   line-height: 40px;
-  color: #111;
+  color: #fff;
 
   &__container {
     font-weight: 600;
