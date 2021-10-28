@@ -7,42 +7,65 @@
   background: whitesmoke;
 }
 
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
 
-.loader > span {
-  display: inline-block;
-  background-color: dimgray;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  margin: 0 8px;
-  transform: translate3d(0, 0, 0);
-  animation: bounce 0.6s infinite alternate;
-}
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #111;
 
-.loader > span:nth-child(2) {
-  background-color: #111;
-  animation-delay: 0.2s;
-}
+  &__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
 
-.loader > span:nth-child(3) {
-  animation-delay: 0.4s;
-}
+    &__text {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
 
-@keyframes bounce {
-  to {
-    width: 16px;
-    height: 16px;
-    transform: translate3d(0, -16px, 0);
+    &__list {
+      margin-top: 0;
+      padding-left: 110px;
+      text-align: left;
+      list-style: none;
+
+      -webkit-animation: trans 10s linear infinite;
+      animation: trans 10s linear infinite;
+
+      &__item {
+        line-height: 40px;
+        margin: 0;
+      }
+    }
   }
 }
 
-.loader > h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5vw;
-  font-weight: 800;
+@keyframes trans {
+  0%, 14.66% {
+    transform: translateY(0%)
+  }
+  16.66%, 31.32% {
+    transform: translateY(-25%)
+  }
+  33.32%, 47.98% {
+    transform: translateY(-50%)
+  }
+  49.98%, 64.64% {
+    transform: translateY(-75%)
+  }
+  66.64%, 81.30% {
+    transform: translateY(-50%)
+  }
+  83.30%, 97.96% {
+    transform: translateY(-25%)
+  }
 }
