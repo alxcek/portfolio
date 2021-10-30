@@ -31,7 +31,10 @@
       display: inline;
       float: left;
       margin: 0;
-      color: dimgray;
+      color: #b46633;
+
+      -webkit-animation: opacity 2s infinite;
+      animation: opacity 2s infinite;
     }
 
     &__list {
@@ -69,5 +72,14 @@
   }
   83.30%, 97.96% {
     transform: translateY(-25%)
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }

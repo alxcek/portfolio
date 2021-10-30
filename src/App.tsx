@@ -10,16 +10,18 @@ function App() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 4500)
+        }, 5500)
     }, [])
 
     return (
-        <div>
+        <div className="application">
             {
                 loading ? (
-                    <Loader/>
+                    <div className="loader">
+                        <Loader/>
+                    </div>
                 ) : (
-                    <Hamburger/>
+                    <h2>Testing</h2>
                 )
             }
         </div>
