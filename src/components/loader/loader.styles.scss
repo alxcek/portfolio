@@ -5,6 +5,7 @@
   flex-direction: column;
   min-height: 100vh;
   background: #0e0e0e;
+  user-select: none;
 }
 
 .content {
@@ -30,6 +31,7 @@
       display: inline;
       float: left;
       margin: 0;
+      color: dimgray;
     }
 
     &__list {

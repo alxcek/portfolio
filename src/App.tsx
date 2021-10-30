@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.scss';
 import Loader from "./components/loader/loader.component";
+import Hamburger from "./components/hamburger-button/hamburger.component";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -9,7 +10,7 @@ function App() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 5500)
+        }, 4500)
     }, [])
 
     return (
@@ -18,7 +19,7 @@ function App() {
                 loading ? (
                     <Loader/>
                 ) : (
-                    <div><h2>Testing</h2></div>
+                    <Hamburger/>
                 )
             }
         </div>
