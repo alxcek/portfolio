@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.scss';
 import Loader from "./components/loader/loader.component";
-import Hamburger from "./components/hamburger-button/hamburger.component";
+import CustomButton from "./components/custom-button/custom-button.component";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -21,7 +21,10 @@ function App() {
                         <Loader/>
                     </div>
                 ) : (
-                    <h2>Testing</h2>
+                    <div>
+                        <CustomButton circle>Yo</CustomButton>
+                        <CustomButton>Yo</CustomButton>
+                    </div>
                 )
             }
         </div>
