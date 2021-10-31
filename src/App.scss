@@ -1,7 +1,12 @@
+html, body {
+  background: #161616;
+}
+
 .loader {
   animation-name: move-up;
   animation-duration: 1s;
   animation-delay: 4500ms;
+  overflow: hidden;
 }
 
 @keyframes move-up {
