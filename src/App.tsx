@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './App.scss';
 import Loader from "./components/loader/loader.component";
-import CustomButton from "./components/custom-button/custom-button.component";
+import {Switch} from "react-router-dom";
+import Header from "./components/header/header.component";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -14,16 +15,18 @@ function App() {
     }, [])
 
     return (
-        <div className="application">
+        <div>
             {
                 loading ? (
                     <div className="loader">
-                        <Loader/>
+                        <Loader />
                     </div>
                 ) : (
-                    <div>
-                        <CustomButton circle>Yo</CustomButton>
-                        <CustomButton>Yo</CustomButton>
+                    <div className="main">
+                        <Header />
+                        <Switch>
+
+                        </Switch>
                     </div>
                 )
             }

@@ -21,16 +21,6 @@
     color: black;
   }
 
-  &.check-more {
-    background-color: #4285f4;
-    color: white;
-
-    &:hover {
-      background-color: #357ae8;
-      border: none;
-    }
-  }
-
   &.inverted {
     background-color: white;
     color: black;
@@ -44,15 +34,14 @@
 
   &.circle {
     border-radius: 50%;
-    height: 7vw;
-    width: 7vw;
+    height: 7em;
+    width: 7em;
     align-items: center;
     border: 1px solid black;
     color: #111;
     background-color: transparent;
 
     &:hover {
-      transition: background-color .3s ease-in-out;
       background-color: #111;
       color: white;
     }
