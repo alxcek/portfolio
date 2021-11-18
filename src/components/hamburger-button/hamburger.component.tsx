@@ -1,13 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 
 import "./hamburger.styles.scss";
 
-const Hamburger = () => {
-    const [status, setStatus] = useState("close");
+type hamburgerProp = {
+    currentStatus: string;
+}
+
+const Hamburger = (status: hamburgerProp) => {
     return (
-        <div className={`menu-btn ${status}`}
+        <div className={`menu-btn ${status.currentStatus}`}
              role="button"
-             onClick={() => setStatus(status === "open" ? "close" : "open")}
         >
             <div className="menu-btn__burger">
             </div>

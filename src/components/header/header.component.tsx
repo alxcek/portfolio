@@ -14,9 +14,12 @@ const Header = () => {
             <div className="header">
                 <div className={`header__overlay ${status}`}>
                     <Overlay>
-                        <Link className="header__overlay__list__option" to="/about">ABOUT</Link>
-                        <Link className="header__overlay__list__option" to="/projects">PROJECTS</Link>
-                        <Link className="header__overlay__list__option" to="/contact">CONTACT</Link>
+                        <Link className="header__overlay__list__option" to="/about"
+                              onClick={() => setStatus("close")}>ABOUT</Link>
+                        <Link className="header__overlay__list__option" to="/projects"
+                              onClick={() => setStatus("close")}>PROJECTS</Link>
+                        <Link className="header__overlay__list__option" to="/contact"
+                              onClick={() => setStatus("close")}>CONTACT</Link>
                     </Overlay>
                 </div>
                 <div className="header__logo__container">
@@ -27,8 +30,10 @@ const Header = () => {
                     <Link className="header__options__option" to="/projects">PROJECTS</Link>
                     <Link className="header__options__option" to="/contact">CONTACT</Link>
                     <div className="header__options__hamburger" role="button"
-                         onClick={() => setStatus(status === "open" ? "close" : "open")}>
-                        <Hamburger/>
+                         onClick={() =>
+                             setStatus(status === "open" ? "close" : "open")
+                         }>
+                        <Hamburger currentStatus={status}/>
                     </div>
                 </div>
             </div>
