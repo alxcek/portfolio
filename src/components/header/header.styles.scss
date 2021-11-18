@@ -7,7 +7,7 @@
   background: linear-gradient(180deg,
           #111, rgba(17, 17, 17, 0));
   font-weight: bolder;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 50000;
   font-family: 'Montserrat', sans-serif;
@@ -24,7 +24,13 @@
       font-size: 3vh;
       font-weight: bolder;
       margin-left: 2vw;
+
+      &:hover {
+        color: #b46633;
+        transition: color .3s ease-in-out;
+      }
     }
+
   }
 
   &__options {

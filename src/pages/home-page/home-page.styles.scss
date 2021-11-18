@@ -1,0 +1,48 @@
+.home-page {
+  position: relative;
+  width: 100vw;
+  height: auto;
+
+  &__text {
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+
+    h2 {
+      text-align: center;
+      margin-top: 3em;
+      transform: translateY(50%);
+      position: relative;
+      color: #FCFCFC;
+      font-family: "Montserrat", sans-serif;
+      font-size: 35px;
+      line-height: 1em;
+      cursor: default;
+    }
+    span:before {
+      content: '';
+      animation: change-text 8s infinite;
+    }
+  }
+
+  @keyframes change-text {
+    0% {
+      content: 'Front-end';
+    }
+    20% {
+      content: 'Back-end';
+    }
+    40% {
+      content: 'Developer';
+    }
+    60% {
+      content: 'Web Designer';
+    }
+    80% {
+      content: 'Student';
+    }
+    100% {
+      content: "Software Engineer";
+    }
+  }
+}
