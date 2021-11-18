@@ -11,8 +11,7 @@ const Hamburger = (status: hamburgerProp) => {
         <div className={`menu-btn ${status.currentStatus}`}
              role="button"
         >
-            <div className="menu-btn__burger">
-            </div>
+            <div className="menu-btn__burger" />
         </div>
     )
 }

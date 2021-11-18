@@ -14,6 +14,8 @@ const Header = () => {
             <div className="header">
                 <div className={`header__overlay ${status}`}>
                     <Overlay>
+                        <Link className="header__overlay__list__option" to="/"
+                              onClick={() => setStatus("close")}>HOME</Link>
                         <Link className="header__overlay__list__option" to="/about"
                               onClick={() => setStatus("close")}>ABOUT</Link>
                         <Link className="header__overlay__list__option" to="/projects"
