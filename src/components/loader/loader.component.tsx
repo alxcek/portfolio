@@ -19,7 +19,7 @@ const Loader = () => {
                             WELCOME
                         </li>
                         <li className="content__container__list__item">
-                            :)
+                            ...
                         </li>
                     </ul>
                 </div>
