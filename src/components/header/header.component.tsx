@@ -5,6 +5,8 @@ import "./header.styles.scss";
 import Hamburger from "../hamburger-button/hamburger.component";
 import Overlay from "../overlay/overlay.component";
 
+import logo from "../../assets/logo.svg";
+
 
 const Header = () => {
     const [status, setStatus] = useState("close");
@@ -25,7 +27,9 @@ const Header = () => {
                     </Overlay>
                 </div>
                 <div className="header__logo__container">
-                    <Link className="header__logo__container__logo" to="/">WELCOME</Link>
+                    <Link className="header__logo__container__logo" to="/">
+                        <img src={logo} alt="logo" className="logo"/>
+                    </Link>
                 </div>
                 <div className={`header__options`}>
                     <Link className="header__options__option" to="/about">ABOUT</Link>
