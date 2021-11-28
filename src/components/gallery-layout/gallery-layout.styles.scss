@@ -1,12 +1,7 @@
-$crimson: crimson;
-$primary: #111;
-$secondary: #adcae6;
-
 .gallery {
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
-  //background-color: #111;
   height: 60rem;
   margin: 0 auto;
 
@@ -60,10 +55,5 @@ $secondary: #adcae6;
   &__image-column {
     position: relative;
     overflow: hidden;
-
-    img {
-      position: absolute;
-      width: 100%;
-    }
   }
 }

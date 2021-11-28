@@ -10,7 +10,12 @@ type GalleryTypeProps = {
     imgPath?: string;
 }
 
-const Gallery = ({number, name, description, link, imgPath, }: GalleryTypeProps) => {
+const Gallery = ({number, name, description, link, imgPath}: GalleryTypeProps) => {
+
+    const style =  {
+        backgroundImage: `url(${imgPath})`,
+        backgroundSize: 'cover'
+    }
 
     return (
         <div className="gallery">
@@ -22,8 +27,7 @@ const Gallery = ({number, name, description, link, imgPath, }: GalleryTypeProps)
                     <div className="link"><a href={link} target="_blank" rel="noreferrer">visit a website</a></div>
                 </div>
             </div>
-                <div className="gallery__image-column">
-                    <img src={imgPath} alt={name}/>
+                <div className="gallery__image-column" style={style}>
                 </div>
         </div>
     )

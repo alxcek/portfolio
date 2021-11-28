@@ -2,7 +2,8 @@
   height: 1000px;
   color: #FCFCFC;
   position: relative;
-  margin-top: 20em;
+  margin-top: 30em;
+  font-family: "Montserrat", sans-serif;
 
   &__section {
     //width: 80vw;
@@ -10,7 +11,8 @@
 
     &__header {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      padding-bottom: 25vh;
     }
 
   }
