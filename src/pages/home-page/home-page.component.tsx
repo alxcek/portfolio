@@ -1,6 +1,7 @@
 import React from "react";
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
+import email from "../../assets/email.svg";
 
 import "./home-page.styles.scss";
 import ArrowDown from "../../components/arrow-down/arrow-down.component";
@@ -25,6 +26,8 @@ const HomePage = () => {
                 <p className="home-page__description__text">
                     Intern at ISUM @ Metropolitan University • Software Engineer
                     <div className="home-page__description__text__links">
+                        <a href="mailto:aleksa.cekic8@gmail.com" target="_blank"
+                           rel="noreferrer"> <img src={email} className="mail" alt="email"/> </a>
                         <a href="https://github.com/yxngalex" rel="noreferrer" target="_blank"> <img src={github}
                                                                                                      className="github"
                                                                                                      alt="github"/> </a>

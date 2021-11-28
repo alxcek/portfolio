@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 734px) {
+@media (max-width: 770px) {
   .home-page {
 
     &__text {
@@ -101,20 +101,25 @@
           margin-top: 2em;
           margin-left: -1em;
 
+          .mail {
+            width: 30px;
+          }
+
           .github {
             width: 30px;
           }
 
           .linkedin {
-            width: 20px;
+            width: 30px;
           }
+
         }
       }
     }
   }
 }
 
-@media (max-width: 635px) {
+@media (max-width: 644px) {
   .home-page {
 
     &__text {
@@ -142,8 +147,11 @@
           margin-top: 3em;
           margin-left: -2em;
 
+          .mail {
+            width: 40px;
+          }
           .github {
-            width: 50px;
+            width: 40px;
           }
 
           .linkedin {
