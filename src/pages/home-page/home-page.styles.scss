@@ -73,6 +73,13 @@
       }
     }
   }
+
+  &__arrow {
+    position: relative !important;
+    margin-top: 19vh;
+    bottom: 0;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 734px) {
@@ -118,7 +125,7 @@
       }
 
       h3 {
-        font-size: 20px !important;
+        font-size: 18px !important;
       }
     }
 
@@ -144,6 +151,10 @@
           }
         }
       }
+    }
+
+    &__arrow {
+      margin-top: 7em;
     }
   }
 }

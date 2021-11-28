@@ -3,6 +3,7 @@ import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 
 import "./home-page.styles.scss";
+import ArrowDown from "../../components/arrow-down/arrow-down.component";
 
 
 const HomePage = () => {
@@ -31,6 +32,9 @@ const HomePage = () => {
                            rel="noreferrer"> <img src={linkedin} className="linkedin" alt="linkedin"/> </a>
                     </div>
                 </p>
+            </div>
+            <div className="home-page__arrow">
+                <ArrowDown />
             </div>
         </section>
     );
