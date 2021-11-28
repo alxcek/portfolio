@@ -17,14 +17,18 @@ const HomePage = () => {
             </div>
             <div className="home-page__description">
                 <p className="home-page__description__desc">
-                    I'm a student that loves to learn new stuff and explore new challenges. I'm very passionate about breaking down complex problems into simple solutions.
+                    I'm a student that loves to learn new stuff and explore new challenges. I'm very passionate about
+                    breaking down complex problems into simple solutions.
                 </p>
                 <br/>
                 <p className="home-page__description__text">
                     Intern at ISUM @ Metropolitan University • Software Engineer
                     <div className="home-page__description__text__links">
-                        <a href="https://github.com/yxngalex" rel="noreferrer" target="_blank"> <img src={github} className="github" alt="github"/> </a>
-                        <a href="https://www.linkedin.com/in/aleksa-ceki%C4%87-347148224/" target="_blank" rel="noreferrer"> <img src={linkedin} className="linkedin" alt="linkedin"/> </a>
+                        <a href="https://github.com/yxngalex" rel="noreferrer" target="_blank"> <img src={github}
+                                                                                                     className="github"
+                                                                                                     alt="github"/> </a>
+                        <a href="https://www.linkedin.com/in/aleksa-ceki%C4%87-347148224/" target="_blank"
+                           rel="noreferrer"> <img src={linkedin} className="linkedin" alt="linkedin"/> </a>
                     </div>
                 </p>
             </div>

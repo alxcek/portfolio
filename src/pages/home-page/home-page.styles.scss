@@ -5,23 +5,19 @@
   height: auto;
 
   &__text {
-    position: relative;
-    pointer-events: none;
     z-index: 1;
     text-align: left;
-    margin-top: 25em;
+    margin-top: 20em;
     transform: translateY(50%);
-    line-height: .3px;
 
     h2, h3 {
-      position: relative;
       color: #FCFCFC;
       font-family: "Montserrat", sans-serif;
-      font-size: 75px;
+      font-size: 7vh;
+      margin: 0;
     }
 
     h3 {
-      margin-top: 3em;
       font-size: 25px !important;
     }
 
@@ -45,11 +41,11 @@
     color: #FCFCFC;
     justify-content: center !important;
     text-align: left;
-    margin: 5em auto 0;
+    margin: 8em auto 0;
 
     &__desc {
       font-family: "Montserrat", sans-serif;
-      font-size: 2.6vh;
+      font-size: 1.9vh;
     }
 
     &__text {
@@ -59,6 +55,7 @@
         float: right;
         margin: 0 auto;
         display: inline-block;
+        align-items: center;
 
         a {
           text-decoration: none;
@@ -72,6 +69,79 @@
           width: 20px;
           margin-left: 1rem;
           vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 734px) {
+  .home-page {
+
+    &__text {
+      margin-top: 15em !important;
+    }
+
+    &__description {
+      &__text {
+
+        &__links {
+          display: flex;
+          vertical-align: middle;
+          float: initial;
+          align-items: center;
+          justify-content: left;
+          margin-top: 2em;
+          margin-left: -1em;
+
+          .github {
+            width: 30px;
+          }
+
+          .linkedin {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  .home-page {
+
+    &__text {
+      margin-top: 10em;
+
+      h2, h3 {
+        font-size: 4vh !important;
+      }
+
+      h3 {
+        font-size: 20px !important;
+      }
+    }
+
+    &__description {
+      &__text {
+        font-size: 10px;
+
+        &__links {
+          display: flex;
+          vertical-align: middle;
+          float: initial;
+          align-items: center;
+          justify-content: left;
+          margin-top: 3em;
+          margin-left: -2em;
+
+          .github {
+            width: 50px;
+          }
+
+          .linkedin {
+            width: 40px;
+          }
         }
       }
     }

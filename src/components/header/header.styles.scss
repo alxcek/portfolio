@@ -76,6 +76,11 @@
 
 @media (max-width: 600px) {
   .header {
+    &__logo__container {
+      .logo {
+        width: 5rem;
+      }
+    }
     &__options {
       position: absolute;
       top: 36px;
