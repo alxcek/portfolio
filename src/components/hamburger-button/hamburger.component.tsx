@@ -2,11 +2,11 @@ import React from "react";
 
 import "./hamburger.styles.scss";
 
-type hamburgerProp = {
+type HamburgerProp = {
     currentStatus: string;
 }
 
-const Hamburger = (status: hamburgerProp) => {
+const Hamburger = (status: HamburgerProp) => {
     return (
         <div className={`menu-btn ${status.currentStatus}`}
              role="button"

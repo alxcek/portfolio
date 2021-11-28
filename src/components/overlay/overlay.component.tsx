@@ -2,11 +2,11 @@ import React from "react";
 
 import "./overlay.styles.scss";
 
-type overlayTypesProps = {
+type OverlayTypesProps = {
     children?: React.ReactNode
 }
 
-const Overlay = (props: overlayTypesProps) => {
+const Overlay = (props: OverlayTypesProps) => {
     return (
         <div className="overlay">
             <nav className="nav">

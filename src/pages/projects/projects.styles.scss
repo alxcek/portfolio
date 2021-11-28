@@ -1,0 +1,17 @@
+.projects {
+  height: 1000px;
+  color: #FCFCFC;
+  position: relative;
+  margin-top: 20em;
+
+  &__section {
+    //width: 80vw;
+    margin: 0 auto;
+
+    &__header {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+  }
+}
