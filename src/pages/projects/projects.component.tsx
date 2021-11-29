@@ -1,6 +1,6 @@
 import React from "react";
 import Gallery from "../../components/gallery-layout/gallery-layout.component";
-import metropolitan from "../../assets/metropolitan.png";
+import test from "../../assets/test.png";
 
 import "./projects.styles.scss";
 
@@ -10,21 +10,7 @@ const works = [
         name: "ISUM",
         description: "Innovative Software technologies University Metropolitan",
         link: "https://isum.metropolitan.ac.rs",
-        imgPath: metropolitan
-    },
-    {
-        number: "02",
-        name: "FINANCE",
-        description: "Finance app for University Metropolitan",
-        link: "https://isum.metropolitan.ac.rs",
-        imgPath: metropolitan
-    },
-    {
-        number: "03",
-        name: "FINANCE",
-        description: "Finance app for University Metropolitan",
-        link: "https://isum.metropolitan.ac.rs",
-        imgPath: metropolitan
+        imgPath: test
     },
 ]
 

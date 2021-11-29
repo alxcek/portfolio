@@ -29,6 +29,7 @@ function App() {
                         <Switch>
                             <HomePage />
                         </Switch>
+                        {/*<Footer />*/}
                     </div>
                 )
             }

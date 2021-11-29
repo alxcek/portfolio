@@ -12,23 +12,22 @@ const HomePage = () => {
     return (
         <section>
             <div className="home-page">
-
                 <div className="home-page__text">
-                    {/*<h2>*/}
-                    {/*    ALEKSA CEKIĆ*/}
-                    {/*</h2>*/}
-                    <h2>Nice to see you!</h2>
+                    <h4>
+                       Good to see you, my name is
+                    </h4>
+                    <h2>Aleksa Cekić</h2>
                     <h3>I'm a <span/></h3>
                 </div>
                 <div className="home-page__description">
-                    <p className="home-page__description__desc">
-                        I'm a student that loves to learn new stuff and explore new challenges. I'm very passionate
-                        about
-                        breaking down complex problems into simple solutions.
-                    </p>
+                    {/*<p className="home-page__description__desc">*/}
+                    {/*    I'm a student that loves to learn new stuff and explore new challenges. I'm very passionate*/}
+                    {/*    about*/}
+                    {/*    breaking down complex problems into simple solutions.*/}
+                    {/*</p>*/}
                     <br/>
                     <p className="home-page__description__text">
-                        Intern at ISUM @ Metropolitan University • Software Engineer
+                        {/*Intern at ISUM @ Metropolitan University • Software Engineer*/}
                         <div className="home-page__description__text__links">
                             <a href="mailto:aleksa.cekic8@gmail.com" target="_blank"
                                rel="noreferrer"> <img src={email} className="mail" alt="email"/> </a>

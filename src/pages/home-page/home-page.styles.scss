@@ -9,16 +9,23 @@
     text-align: left;
     margin-top: 20em;
     transform: translateY(50%);
+    font-family: "Montserrat", sans-serif;
+    color: #FCFCFC;
 
-    h2, h3 {
-      color: #FCFCFC;
-      font-family: "Montserrat", sans-serif;
+    h2 {
       font-size: 7vh;
       margin: 0;
     }
 
     h3 {
       font-size: 25px !important;
+      margin-top: 1em;
+    }
+
+    h4 {
+      font-size: 20px !important;
+      margin: 0;
+      line-height: 1em;
     }
 
 
@@ -41,7 +48,7 @@
     color: #FCFCFC;
     justify-content: center !important;
     text-align: left;
-    margin: 8em auto 0;
+    margin: 6em auto 0;
 
     &__desc {
       font-family: "Montserrat", sans-serif;
@@ -52,10 +59,9 @@
       font-family: "Montserrat", sans-serif;
 
       &__links {
-        float: right;
-        margin: 0 auto;
         display: inline-block;
         align-items: center;
+        margin-left: -1em;
 
         a {
           text-decoration: none;
@@ -95,7 +101,6 @@
         &__links {
           display: flex;
           vertical-align: middle;
-          float: initial;
           align-items: center;
           justify-content: left;
           margin-top: 2em;
@@ -119,7 +124,7 @@
   }
 }
 
-@media (max-width: 644px) {
+@media (max-width: 600px) {
   .home-page {
 
     &__text {
@@ -141,29 +146,23 @@
         &__links {
           display: flex;
           vertical-align: middle;
-          float: initial;
           align-items: center;
           justify-content: left;
-          margin-top: 3em;
-          margin-left: -2em;
+          margin-left: -1em;
 
           .mail {
-            width: 40px;
+            width: 30px;
           }
 
           .github {
-            width: 40px;
+            width: 30px;
           }
 
           .linkedin {
-            width: 40px;
+            width: 30px;
           }
         }
       }
-    }
-
-    &__arrow {
-      margin-top: 7em;
     }
   }
 }
