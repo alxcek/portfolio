@@ -20,13 +20,7 @@ const HomePage = () => {
                     <h3>I'm a <span/></h3>
                 </div>
                 <div className="home-page__description">
-                    {/*<p className="home-page__description__desc">*/}
-                    {/*    I'm a student that loves to learn new stuff and explore new challenges. I'm very passionate*/}
-                    {/*    about*/}
-                    {/*    breaking down complex problems into simple solutions.*/}
-                    {/*</p>*/}
-                    <br/>
-                    <p className="home-page__description__text">
+                    <div className="home-page__description__text">
                         {/*Intern at ISUM @ Metropolitan University • Software Engineer*/}
                         <div className="home-page__description__text__links">
                             <a href="mailto:aleksa.cekic8@gmail.com" target="_blank"
@@ -38,7 +32,7 @@ const HomePage = () => {
                             <a href="https://www.linkedin.com/in/aleksa-ceki%C4%87-347148224/" target="_blank"
                                rel="noreferrer"> <img src={linkedin} className="linkedin" alt="linkedin"/> </a>
                         </div>
-                    </p>
+                    </div>
                 </div>
                 <div className="home-page__arrow">
                     <ArrowDown />

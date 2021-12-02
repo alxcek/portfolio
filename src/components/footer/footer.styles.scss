@@ -1,10 +1,43 @@
 .footer {
   position: relative;
   width: 100%;
-  height: 14em;
-  background: #FCFCFC;
+  height: 20em;
+  background: whitesmoke;
   color: #161616;
   bottom: 0;
+  font-family: "Montserrat", sans-serif !important;
+
+  &__underline {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6em;
+
+    &__horizontal_line {
+      border-bottom: 1px solid #111;
+      width: 80%;
+    }
+
+    &__content {
+      justify-content: space-between;
+      display: flex;
+
+      .name {
+        font-size: 17px;
+      }
+
+      .arrow_up {
+        width: 4em;
+      }
+
+      .arrow_up {
+        cursor: pointer;
+      }
+    }
+
+  }
 
   &__container {
     position: relative;
@@ -12,19 +45,101 @@
     width: 80%;
     margin: 27% auto 0;
     top: 25%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     &__name {
       font-size: 1.5em;
     }
+
+    &__block {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-weight: 900;
+        font-size: 20px;
+      }
+
+      &__list {
+        display: grid !important;
+        margin-top: 1em;
+
+        a {
+          margin-bottom: .5em;
+          width: 85px;
+          color: #111;
+        }
+      }
+    }
+
+    &__block2 {
+      &__info {
+        display: grid;
+
+        .address {
+          font-weight: 900;
+          font-size: 20px;
+        }
+
+        .email {
+          margin-bottom: 1em;
+        }
+      }
+
+      &__icons {
+
+        a {
+          text-decoration: none;
+          margin-right: 1em;
+
+          .mail {
+            width: 22px !important;
+          }
+
+          img {
+            width: 24px;
+          }
+        }
+      }
+    }
   }
+}
 
-  &__block {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 600px) {
+  .footer {
+    &__container {
+      h1 {
+        font-size: 15px;
+      }
 
-    &__list {
+      &__block__list {
+        a {
+          font-size: 15px;
+        }
+      }
+
+      &__block2 {
+        &__info {
+          .address {
+            font-size: 13px;
+          }
+
+          .email {
+            font-size: 10px;
+          }
+
+          &__icons {
+
+            a {
+
+              img {
+                width: 12px !important;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

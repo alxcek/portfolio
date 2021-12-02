@@ -29,9 +29,8 @@ function App() {
                         <Header/>
                         <Switch>
                             <Route exact path='/' component={HomePage} />
-                            <Route path='/about' component={Footer} />
-                            <Route path='/contact' component={Footer} />
                         </Switch>
+                        <Footer />
                     </div>
                 )
             }

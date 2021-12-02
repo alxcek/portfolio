@@ -8,6 +8,7 @@ import "./projects.styles.scss";
 
 const works = [
     {
+        id: 1,
         number: "01",
         name: "Test",
         description: "Intern at Google, Test sample",
@@ -16,6 +17,7 @@ const works = [
         color: "black",
     },
     {
+        id: 2,
         number: "02",
         name: "Finance",
         description: "Innovative Software technologies University Metropolitan",
@@ -24,6 +26,7 @@ const works = [
         color: "white"
     },
     {
+        id: 3,
         number: "03",
         name: "Sample Text",
         description: "Innovative Software technologies University Metropolitan",
@@ -43,7 +46,7 @@ const Projects = () => {
                 {/*<div className="projects__section__underline"/>*/}
                 <div className="projects__section__grid">
                     {
-                        works.map(w => <Gallery {...w} />)
+                        works.map(w => <Gallery key={w.id} {...w} />)
                     }
                 </div>
             </div>
