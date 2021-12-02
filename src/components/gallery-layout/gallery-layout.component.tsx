@@ -8,9 +8,10 @@ type GalleryTypeProps = {
     description?: string;
     link?: string;
     imgPath?: string;
+    color?: string;
 }
 
-const Gallery = ({number, name, description, link, imgPath}: GalleryTypeProps) => {
+const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeProps) => {
 
     const style =  {
         backgroundImage: `url(${imgPath})`,
@@ -21,7 +22,7 @@ const Gallery = ({number, name, description, link, imgPath}: GalleryTypeProps) =
 
     return (
         <div className="gallery">
-            <div className='gallery__text-column'>
+            <div className={`gallery__text-column ${color} ? "white" : ""`}>
                 <div className="block">
                     <div className="number">{number}</div>
                     <div className="name">{name}</div>

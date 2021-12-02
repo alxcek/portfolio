@@ -9,10 +9,14 @@
     //width: 80vw;
     margin: 0 auto;
 
+    &__underline {
+      border-bottom: 1px solid #adcae6;
+      margin: 3em 40em 10em;
+    }
+
     &__header {
       text-align: center;
       font-size: 1.2rem;
-      padding-bottom: 10vh;
     }
 
   }

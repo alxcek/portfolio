@@ -10,6 +10,19 @@
     //border-right: 1px solid #FCFCFC;
     background-color: rgba(255, 255, 255, 0.0);
 
+    &.white {
+      background-color: rgba(252, 252, 252, 1) !important;
+      color: #111;
+
+      a {
+        color: #111 !important;
+      }
+
+      &:hover {
+        background-color: rgba(252, 252, 252, 0.9) !important;
+      }
+    }
+
     .block {
       position: absolute;
       top: 37%;
