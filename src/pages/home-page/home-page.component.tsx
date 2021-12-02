@@ -14,7 +14,7 @@ const HomePage = () => {
             <div className="home-page">
                 <div className="home-page__text">
                     <h4>
-                       Good to see you, my name is
+                       Greetings, my name is
                     </h4>
                     <h2>Aleksa Cekić</h2>
                     <h3>I'm a <span/></h3>
@@ -41,7 +41,7 @@ const HomePage = () => {
                     </p>
                 </div>
                 <div className="home-page__arrow">
-                    <ArrowDown/>
+                    <ArrowDown />
                 </div>
             </div>
             <Projects />

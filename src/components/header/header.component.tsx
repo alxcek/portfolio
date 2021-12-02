@@ -29,6 +29,7 @@ const Header = () => {
                 <div className="header__logo__container">
                     <Link className="header__logo__container__logo" to="/">
                         <img src={logo} alt="logo" className="logo"/>
+                        {/*Aleksa Cekić*/}
                     </Link>
                 </div>
                 <div className={`header__options`}>

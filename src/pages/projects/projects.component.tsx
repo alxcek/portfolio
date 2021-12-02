@@ -9,7 +9,7 @@ const works = [
         number: "01",
         name: "ISUM",
         description: "Innovative Software technologies University Metropolitan",
-        link: "https://isum.metropolitan.ac.rs",
+        link: "/isum",
         imgPath: test
     },
 ]

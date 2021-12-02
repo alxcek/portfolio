@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import Loader from "./components/loader/loader.component";
-import {Switch} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Header from "./components/header/header.component";
 import HomePage from "./pages/home-page/home-page.component";
 
 import "./App.scss";
+import Footer from "./components/footer/footer.component";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -21,15 +22,15 @@ function App() {
             {
                 loading ? (
                     <div className="loader">
-                        <Loader />
+                        <Loader/>
                     </div>
                 ) : (
                     <div className="main">
-                        <Header />
+                        <Header/>
                         <Switch>
-                            <HomePage />
+                            <Route exact path='/' component={HomePage}/>
                         </Switch>
-                        {/*<Footer />*/}
+                        <Footer/>
                     </div>
                 )
             }

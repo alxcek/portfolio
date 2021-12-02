@@ -26,11 +26,10 @@ const Gallery = ({number, name, description, link, imgPath}: GalleryTypeProps) =
                     <div className="number">{number}</div>
                     <div className="name">{name}</div>
                     <div className="desc">{description}</div>
-                    <div className="link"><a href={link} target="_blank" rel="noreferrer">visit the website</a></div>
+                    <div className="link"><a href={link}>read more</a></div>
                 </div>
             </div>
-                <div className="gallery__image-column" style={style}>
-                </div>
+                <div className="gallery__image-column" style={style}/>
         </div>
     )
 }
