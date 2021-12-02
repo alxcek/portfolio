@@ -13,7 +13,7 @@ type GalleryTypeProps = {
 
 const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeProps) => {
 
-    const style =  {
+    const style = {
         backgroundImage: `url(${imgPath})`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
@@ -22,6 +22,7 @@ const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeP
 
     return (
         <div className="gallery">
+            <div className="gallery__image-column" style={style}/>
             <div className={`gallery__text-column ${color} ? "white" : ""`}>
                 <div className="block">
                     <div className="number">{number}</div>
@@ -30,7 +31,6 @@ const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeP
                     <div className="link"><a href={link}>read more</a></div>
                 </div>
             </div>
-                <div className="gallery__image-column" style={style}/>
         </div>
     )
 }

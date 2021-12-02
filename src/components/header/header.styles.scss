@@ -1,5 +1,5 @@
 .header {
-  height: 20vh;
+  height: 15vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,7 @@
   &__logo__container {
     color: #FCFCFC;
     position: absolute;
-    top: 36px;
+    top: 15px;
     opacity: 1 !important;
 
     &__logo {
@@ -31,7 +31,7 @@
 
   &__options {
     width: 50%;
-    top: 38px;
+    top: 15px;
     position: absolute;
     display: grid;
     left: 48.66667vw;
@@ -77,6 +77,8 @@
   .header {
     &__logo__container {
       .logo {
+        position: absolute;
+        top: 23px;
         width: 5rem;
       }
     }
