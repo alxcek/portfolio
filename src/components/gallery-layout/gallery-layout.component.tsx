@@ -1,15 +1,8 @@
 import React from "react";
+import {GalleryTypeProps} from "../../@types/Gallery";
 
 import "./gallery-layout.styles.scss";
 
-type GalleryTypeProps = {
-    number?: string;
-    name?: string;
-    description?: string;
-    link?: string;
-    imgPath?: string;
-    color?: string;
-}
 
 const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeProps) => {
 

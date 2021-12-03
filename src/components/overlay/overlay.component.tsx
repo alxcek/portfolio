@@ -1,10 +1,7 @@
 import React from "react";
+import {OverlayTypesProps} from "../../@types/Overlay";
 
 import "./overlay.styles.scss";
-
-type OverlayTypesProps = {
-    children?: React.ReactNode
-}
 
 const Overlay = (props: OverlayTypesProps) => {
     return (

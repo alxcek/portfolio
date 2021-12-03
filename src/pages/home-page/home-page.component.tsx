@@ -5,7 +5,7 @@ import email from "../../assets/email.svg";
 
 import "./home-page.styles.scss";
 import ArrowDown from "../../components/arrow-down/arrow-down.component";
-import Projects from "../projects/projects.component";
+import Projects from "../../components/projects/projects.component";
 
 const HomePage = () => {
     const [opacity, setOpacity] = useState(1);
@@ -21,21 +21,24 @@ const HomePage = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+
+        // return () => {
+        //     window.removeEventListener('scroll', handleScroll, false);
+        // }
     }, []);
 
     return (
         <section>
-            <div className="home-page">
-                <div className="home-page__text" style={{opacity}} >
+            <div className="home-page" style={{opacity}}>
+                <div className="home-page__text">
                     <h4>
                         Greetings, my name is
                     </h4>
                     <h2>Aleksa Cekić</h2>
                     <h3>I'm a <span/></h3>
                 </div>
-                <div className="home-page__description" style={{opacity}}>
+                <div className="home-page__description">
                     <div className="home-page__description__text">
-                        {/*Intern at ISUM @ Metropolitan University • Software Engineer*/}
                         <div className="home-page__description__text__links">
                             <a href="mailto:aleksa.cekic8@gmail.com" target="_blank"
                                rel="noreferrer"> <img src={email} className="mail" alt="email"/> </a>

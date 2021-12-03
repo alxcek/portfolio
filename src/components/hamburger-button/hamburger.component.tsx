@@ -1,10 +1,7 @@
 import React from "react";
+import {HamburgerProp} from "../../@types/Hamburger";
 
 import "./hamburger.styles.scss";
-
-type HamburgerProp = {
-    currentStatus: string;
-}
 
 const Hamburger = (status: HamburgerProp) => {
     return (

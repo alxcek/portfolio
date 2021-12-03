@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery from "../../components/gallery-layout/gallery-layout.component";
+import Gallery from "../gallery-layout/gallery-layout.component";
 
 import "./projects.styles.scss";
 import {works} from "../../data/works";
@@ -12,7 +12,6 @@ const Projects = () => {
                 <div className="projects__section__header">
                     <h2>Projects</h2>
                 </div>
-                {/*<div className="projects__section__underline"/>*/}
                 <div className="projects__section__grid">
                     {
                         works.map(w => <Gallery key={w.id} {...w} />)
