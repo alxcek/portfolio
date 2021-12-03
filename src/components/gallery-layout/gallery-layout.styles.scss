@@ -8,10 +8,10 @@
   &__text-column {
     position: relative;
     //border-right: 1px solid #FCFCFC;
-    background-color: rgba(255, 255, 255, 0.0);
+    background-color: rgba(17, 17, 17, 1) !important;
 
     &.white {
-      background-color: rgba(252, 252, 252, 1) !important;
+      background-color: #FCFCFC !important;
       color: #111;
 
       a {
@@ -19,7 +19,7 @@
       }
 
       &:hover {
-        background-color: rgba(252, 252, 252, 0.9) !important;
+        background-color: #ffffff !important;
       }
     }
 
@@ -60,7 +60,7 @@
     }
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: #1d1d1d !important;
       transition: all .6s ease;
     }
   }
