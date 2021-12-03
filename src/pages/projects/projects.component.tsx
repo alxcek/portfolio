@@ -10,7 +10,7 @@ const Projects = () => {
         <section className="projects">
             <div className="projects__section">
                 <div className="projects__section__header">
-                    <h2>[PROJECTS]</h2>
+                    <h2>Projects</h2>
                 </div>
                 {/*<div className="projects__section__underline"/>*/}
                 <div className="projects__section__grid">

@@ -1,13 +1,18 @@
 .home-page {
-  position: relative;
-  width: 80vw;
+  position: fixed;
+  width: 100vw;
+  //width: 80vw;
+  top: 0;
   margin: 0 auto;
-  height: auto;
+  height: 100vh;
+  background-color: #111111;
+  z-index: -200;
 
   &__text {
     z-index: 1;
     text-align: left;
     margin-top: 20em;
+    margin-left: 13vw;
     transform: translateY(50%);
     font-family: "Montserrat", sans-serif;
     color: #FCFCFC;
@@ -61,7 +66,7 @@
       &__links {
         display: inline-block;
         align-items: center;
-        margin-left: -1em;
+        margin-left: 12vw;
 
         a {
           text-decoration: none;
@@ -93,6 +98,8 @@
 
     &__text {
       margin-top: 15em !important;
+      text-align: center;
+      margin-left: 0;
     }
 
     &__description {
@@ -100,14 +107,14 @@
 
         &__links {
           display: flex;
-          vertical-align: middle;
           align-items: center;
-          justify-content: left;
+          justify-content: center;
           margin-top: 2em;
-          margin-left: -1em;
+          margin-left: 0;
 
           .mail {
             width: 30px;
+            margin-left: 0;
           }
 
           .github {
@@ -145,13 +152,13 @@
 
         &__links {
           display: flex;
-          vertical-align: middle;
           align-items: center;
-          justify-content: left;
-          margin-left: -1em;
+          justify-content: center;
+          margin-left: 0;
 
           .mail {
             width: 30px;
+            margin-left: 0;
           }
 
           .github {

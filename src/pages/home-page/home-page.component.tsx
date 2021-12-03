@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 import email from "../../assets/email.svg";
@@ -7,19 +7,33 @@ import "./home-page.styles.scss";
 import ArrowDown from "../../components/arrow-down/arrow-down.component";
 import Projects from "../projects/projects.component";
 
-
 const HomePage = () => {
+    const [opacity, setOpacity] = useState(1);
+
+    const handleScroll = () => {
+        const {scrollY, innerHeight} = window;
+        if (scrollY * 2 < innerHeight) {
+            setOpacity(1 - scrollY / innerHeight * 2);
+        } else {
+            setOpacity(0);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <section>
             <div className="home-page">
-                <div className="home-page__text">
+                <div className="home-page__text" style={{opacity}} >
                     <h4>
-                       Greetings, my name is
+                        Greetings, my name is
                     </h4>
                     <h2>Aleksa Cekić</h2>
                     <h3>I'm a <span/></h3>
                 </div>
-                <div className="home-page__description">
+                <div className="home-page__description" style={{opacity}}>
                     <div className="home-page__description__text">
                         {/*Intern at ISUM @ Metropolitan University • Software Engineer*/}
                         <div className="home-page__description__text__links">
@@ -35,10 +49,10 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="home-page__arrow">
-                    <ArrowDown />
+                    <ArrowDown/>
                 </div>
             </div>
-            <Projects />
+            <Projects/>
         </section>
     );
 }
