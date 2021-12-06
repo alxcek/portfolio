@@ -29,5 +29,5 @@ export const works = [
         link: "/netflix",
         imgPath: test2,
         color: "black"
-    },
+    }
 ]

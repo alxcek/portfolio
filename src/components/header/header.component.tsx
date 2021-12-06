@@ -30,9 +30,9 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className={`header__options`}>
-                    <Link className="header__options__option" to="/">[ projects ]</Link>
-                    <Link className="header__options__option" to="/about">[ about ]</Link>
-                    <Link className="header__options__option" to="/contact">[ contact ]</Link>
+                    <Link className="header__options__option" to="/">projects</Link>
+                    <Link className="header__options__option" to="/about">about</Link>
+                    <Link className="header__options__option" to="/contact">contact</Link>
                     <div className="header__options__hamburger" role="button"
                          onClick={() =>
                              setStatus(status === "open" ? "close" : "open")

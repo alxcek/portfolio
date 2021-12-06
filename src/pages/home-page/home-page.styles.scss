@@ -44,8 +44,8 @@
     }
 
     span:before {
-      content: '';
-      animation: change-text 9s infinite;
+      content: 'Front-end Developer';
+      animation: change-text 7s infinite;
     }
   }
 
@@ -175,22 +175,19 @@
 }
 
 @keyframes change-text {
-  0% {
-    content: 'Front-end';
+  10% {
+    content: 'Front-end Developer';
   }
-  20% {
-    content: 'Back-end';
+  30% {
+    content: 'Back-end Developer';
   }
-  40% {
-    content: 'Developer';
-  }
-  60% {
+  50% {
     content: 'Web Designer';
   }
-  80% {
+  70% {
     content: 'Student';
   }
-  100% {
+  90% {
     content: "Software Engineer";
   }
 }

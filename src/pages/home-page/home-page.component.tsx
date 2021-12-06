@@ -29,7 +29,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <section>
+        <div>
             <div className="home-page" style={{opacity}}>
                 <div className="home-page__text">
                     <h4>
@@ -62,7 +62,7 @@ const HomePage = () => {
             <div className="foot">
                 <Footer/>
             </div>
-        </section>
+        </div>
     );
 }
 
