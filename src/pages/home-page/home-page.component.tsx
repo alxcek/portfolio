@@ -6,6 +6,7 @@ import email from "../../assets/email.svg";
 import "./home-page.styles.scss";
 import ArrowDown from "../../components/arrow-down/arrow-down.component";
 import Projects from "../../components/projects/projects.component";
+import Footer from "../../components/footer/footer.component";
 
 const HomePage = () => {
     const [opacity, setOpacity] = useState(1);
@@ -55,7 +56,12 @@ const HomePage = () => {
                     <ArrowDown/>
                 </div>
             </div>
-            <Projects/>
+            <div className="projects-view">
+                <Projects/>
+            </div>
+            <div className="foot">
+                <Footer/>
+            </div>
         </section>
     );
 }
