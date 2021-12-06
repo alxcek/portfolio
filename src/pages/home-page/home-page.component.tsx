@@ -23,9 +23,9 @@ const HomePage = () => {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
-        // return () => {
-        //     window.removeEventListener('scroll', handleScroll, false);
-        // }
+        return () => {
+            window.removeEventListener('scroll', handleScroll, false);
+        }
     }, []);
 
     return (
