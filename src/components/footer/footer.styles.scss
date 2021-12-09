@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   height: 20em;
-  background: #181818;
+  //background: #181818;
+  background: #111;
   font-family: "Montserrat", sans-serif !important;
   display: flex;
   flex-direction: column;
@@ -87,6 +88,11 @@
       img {
         margin-top: 1em;
         width: 3em;
+      }
+
+      &:hover {
+        transition: all .6s ease-in-out;
+        background: #1d1d1d;
       }
     }
   }

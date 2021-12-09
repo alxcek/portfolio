@@ -10,7 +10,7 @@ const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeP
         backgroundImage: `url(${imgPath})`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
-        backgroundPosition: '100% 100%'
+        backgroundPosition: '20% 100%'
     }
 
     return (
@@ -21,7 +21,7 @@ const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeP
                     <div className="number">{number}</div>
                     <div className="name">{name}</div>
                     <div className="desc">{description}</div>
-                    <div className="link"><a href={link}>read more</a></div>
+                    <div className="link"><a href={link}>Read more</a></div>
                 </div>
             </div>
         </div>

@@ -70,3 +70,37 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 600px) {
+  .gallery:not(:first-child) {
+    border-top: 1px solid #FCFCFC;
+    width: 80%;
+  }
+
+  .gallery {
+    display: block;
+    text-align: center;
+    height: 16rem;
+
+    &__text-column {
+      background-color: rgba(17, 17, 17, 0.0) !important;
+
+      .block {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #FCFCFC !important;
+
+        .name.number {
+          display: flex;
+        }
+
+        .link {
+          a {
+            color: #FCFCFC !important;
+          }
+        }
+      }
+    }
+  }
+}

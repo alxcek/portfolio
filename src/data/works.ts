@@ -29,5 +29,14 @@ export const works = [
         link: "/netflix",
         imgPath: test2,
         color: "black"
+    },
+    {
+        id: 4,
+        number: "04",
+        name: "Sample Text",
+        description: "Innovative Software technologies University Metropolitan",
+        link: "/netflix",
+        imgPath: metropolitan,
+        color: "black"
     }
 ]

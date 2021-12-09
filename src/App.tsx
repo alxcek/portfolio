@@ -5,6 +5,7 @@ import Header from "./components/header/header.component";
 import HomePage from "./pages/home-page/home-page.component";
 
 import "./App.scss";
+import AboutPage from "./pages/about/about.component";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ function App() {
         setTimeout(() => {
             setLoading(false)
         }, 5500)
-    }, [])
+    }, []);
 
     return (
         <main>
@@ -28,6 +29,7 @@ function App() {
                         <Header/>
                         <Switch>
                             <Route exact path='/' component={HomePage} />
+                            <Route path='/about' component={AboutPage} />
                         </Switch>
                     </div>
                 )
