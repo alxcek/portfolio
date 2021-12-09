@@ -37,6 +37,6 @@ export const works = [
         description: "Innovative Software technologies University Metropolitan",
         link: "/netflix",
         imgPath: metropolitan,
-        color: "black"
+        color: "white"
     }
 ]

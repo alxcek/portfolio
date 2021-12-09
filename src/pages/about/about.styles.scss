@@ -1,0 +1,17 @@
+.about {
+  width: 100vw;
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+
+  &__container {
+    margin-top: 10em;
+
+    h2 {
+      font-weight: bolder;
+      font-size: 49px;
+    }
+  }
+}
