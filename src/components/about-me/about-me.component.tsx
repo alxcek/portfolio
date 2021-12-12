@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./about-me.styles.scss";
+import Progress from "../progress-bar/progress-bar.component";
 
 const AboutMe = () => {
     return (
@@ -23,13 +24,22 @@ const AboutMe = () => {
 
             <div className="skills">
                 <h3>Skills:</h3>
-                <span>Java</span>
-                <span>Typescript</span>
-                <span>Javascript</span>
-                <span>Python</span>
-                <span>Spring Boot</span>
-                <span>React</span>
-                <span>Angular</span>
+                <ul>
+                    <li><Progress title={"Java"} value={70}/></li>
+                    <li><Progress title={"Typescript"} value={65}/></li>
+                    <li><Progress title={"Python"} value={20}/></li>
+                    <li><Progress title={"Spring Boot"} value={30}/></li>
+                    <li><Progress title={"React"} value={70}/></li>
+                    <li><Progress title={"Angular"} value={80}/></li>
+                    <li><Progress title={"Databases / SQL"} value={80}/></li>
+                </ul>
+                {/*<span>Java</span>*/}
+                {/*<span>Typescript</span>*/}
+                {/*<span>Javascript</span>*/}
+                {/*<span>Python</span>*/}
+                {/*<span>Spring Boot</span>*/}
+                {/*<span>React</span>*/}
+                {/*<span>Angular</span>*/}
             </div>
         </div>
     )

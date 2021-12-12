@@ -23,8 +23,10 @@
   .skills {
     display: grid;
 
-    span:not(:last-child) {
-      margin-bottom: .5em;
+    ul {
+      list-style: none;
+      margin-top: 0;
+      padding: 0;
     }
 
     h3 {
