@@ -2,7 +2,6 @@
   position: relative;
   text-align: center;
   margin-top: 7em;
-  overflow-x: hidden !important;
 
   .who-am-i {
     width: 80%;
@@ -31,6 +30,8 @@
   }
 
   &__resume {
+    margin-top: 5em;
+
     .horizontal__line {
       border-bottom: 1px solid #FCFCFC;
       width: 80%;
@@ -38,6 +39,27 @@
     }
 
     .resume {
+      margin-top: 5em;
+
+      h2 {
+        margin-bottom: 2em;
+      }
+
+      .resume-image {
+        width: 30em;
+      }
+
+      .btn {
+        margin: 2em 0;
+
+        a {
+          text-decoration: none;
+        }
+
+        button {
+          margin: 0 auto;
+        }
+      }
     }
   }
 }

@@ -21,6 +21,8 @@ const HomePage = () => {
     }
 
     useEffect(() => {
+        window.scrollTo({top: 0, behavior: "smooth"});
+
         window.addEventListener('scroll', handleScroll);
 
         return () => {

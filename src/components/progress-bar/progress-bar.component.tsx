@@ -9,7 +9,7 @@ const Progress = ({title, value, max}: ProgressBarProps) => {
         <div>
             <span>{title}</span>
             <br />
-            <progress value={value} max={100}/>
+            <progress value={value} max={max}/>
             {/*<span>{(value / max) * 100}%</span>*/}
         </div>
     )

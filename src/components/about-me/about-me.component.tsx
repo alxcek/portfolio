@@ -21,7 +21,6 @@ const AboutMe = () => {
             <h6>
                 Have a good day!
             </h6>
-
             <div className="skills">
                 <h3>Skills:</h3>
                 <ul>
@@ -33,13 +32,6 @@ const AboutMe = () => {
                     <li><Progress title={"Angular"} value={80}/></li>
                     <li><Progress title={"Databases / SQL"} value={80}/></li>
                 </ul>
-                {/*<span>Java</span>*/}
-                {/*<span>Typescript</span>*/}
-                {/*<span>Javascript</span>*/}
-                {/*<span>Python</span>*/}
-                {/*<span>Spring Boot</span>*/}
-                {/*<span>React</span>*/}
-                {/*<span>Angular</span>*/}
             </div>
         </div>
     )
