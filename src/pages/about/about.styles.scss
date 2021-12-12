@@ -1,17 +1,44 @@
 .about {
-  width: 100vw;
   position: relative;
-  margin: 0 auto;
   height: 100vh;
-  overflow-x: hidden;
   text-align: center;
+  margin-top: 7em;
+  overflow-x: hidden !important;
+
+  .who-am-i {
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      text-align: left;
+      font-weight: 600;
+      font-size: 36px;
+    }
+  }
 
   &__container {
-    margin-top: 10em;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden !important;
+
+    .content {
+    }
 
     h2 {
       font-weight: bolder;
       font-size: 49px;
+    }
+  }
+
+  &__resume {
+    .horizontal__line {
+      border-bottom: 1px solid #FCFCFC;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .resume {
     }
   }
 }
