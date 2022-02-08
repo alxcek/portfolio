@@ -28,7 +28,7 @@ const AboutPage = () => {
                     <h2>Resume</h2>
                     <img src={resume} alt={resume} className="resume-image"/>
                     <div className="btn">
-                        <a href="https://7aske.com" target="_blank" rel="noreferrer"><CustomButton inverted>Download</CustomButton></a>
+                        <CustomButton inverted onClick={() => {window.open("https://www.7aske.com")}}>Download</CustomButton>
                     </div>
                 </div>
             </div>
