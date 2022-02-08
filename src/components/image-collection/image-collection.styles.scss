@@ -6,3 +6,12 @@
     height: 94vh;
   }
 }
+
+@media (max-width: 1250px) {
+  .image-container {
+    img {
+      width: 33vw;
+      height: 48vh;
+    }
+  }
+}

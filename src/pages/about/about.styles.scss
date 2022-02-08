@@ -20,9 +20,6 @@
     display: flex;
     overflow: hidden !important;
 
-    .content {
-    }
-
     h2 {
       font-weight: bolder;
       font-size: 49px;
@@ -58,4 +55,12 @@
       }
     }
   }
+}
+
+@media (max-width: 1250px) {
+    .about {
+      &__container {
+        display: block;
+      }
+    }
 }

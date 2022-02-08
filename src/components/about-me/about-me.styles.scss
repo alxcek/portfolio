@@ -34,3 +34,12 @@
     }
   }
 }
+
+@media (max-width: 1250px) {
+  .about__container__info {
+    text-align: center;
+    width: auto;
+    margin-left: 0 !important;
+    margin-top: 2em;
+  }
+}
