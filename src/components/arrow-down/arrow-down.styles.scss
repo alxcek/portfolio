@@ -12,6 +12,8 @@
     border-right: 2px solid #FCFCFC;
     transform: rotate(45deg);
     margin: -10px;
+    cursor: none;
+    pointer-events: none;
     animation: animate 2s infinite;
   }
 

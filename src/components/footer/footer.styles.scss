@@ -28,7 +28,9 @@
           color: #FCFCFC;
           margin-right: 1em;
           margin-bottom: 66px;
+          cursor: none;
         }
+
         .contact {
           margin-right: 0;
         }
@@ -42,6 +44,7 @@
 
       img {
         width: 7em;
+        cursor: none;
       }
     }
 
@@ -61,6 +64,10 @@
       .images {
         margin-right: -1em;
         user-select: none;
+
+        a {
+          cursor: none;
+        }
 
         img {
           margin-right: 1em;
@@ -83,11 +90,12 @@
       text-align: center;
       width: 100%;
       height: 150%;
-      cursor: pointer;
+      cursor: none;
 
       img {
         margin-top: 1em;
         width: 3em;
+        cursor: none;
       }
 
       &:hover {
@@ -126,6 +134,7 @@
     }
   }
 }
+
 @media (max-width: 320px) {
   .footer {
     &__content {
