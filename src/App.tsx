@@ -7,6 +7,7 @@ import HomePage from "./pages/home-page/home-page.component";
 import "./App.scss";
 import AboutPage from "./pages/about/about.component";
 import ContactPage from "./pages/contact/contact.component";
+import Cursor from "./components/cursor/cursor";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -27,6 +28,7 @@ function App() {
                     </div>
                 ) : (
                     <div className="main">
+                        <Cursor />
                         <Header/>
                         <Switch>
                             <Route exact path='/' component={HomePage} />

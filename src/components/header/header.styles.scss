@@ -23,6 +23,7 @@
 
       .logo {
         width: 100px;
+        cursor: none;
         user-select: none;
       }
     }
@@ -53,7 +54,7 @@
       padding: 5px 15px;
       margin-right: 3vw;
       color: #FCFCFC;
-      cursor: pointer;
+      cursor: none;
       text-align: left;
       text-decoration: none;
       font-size: 2vh;
