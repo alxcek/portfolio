@@ -13,27 +13,27 @@ const Header = () => {
 
     return (
         <header>
-            <div className="header">
-                <div className={`header__overlay ${status}`}>
+            <div className="bar">
+                <div className={`bar__overlay ${status}`}>
                     <Overlay>
-                        <Link className="header__overlay__list__option" to="/"
+                        <Link className="bar__overlay__list__option" to="/"
                               onClick={() => setStatus("close")}>HOME</Link>
-                        <Link className="header__overlay__list__option" to="/about"
+                        <Link className="bar__overlay__list__option" to="/about"
                               onClick={() => setStatus("close")}>ABOUT</Link>
-                        <Link className="header__overlay__list__option" to="/contact"
+                        <Link className="bar__overlay__list__option" to="/contact"
                               onClick={() => setStatus("close")}>CONTACT</Link>
                     </Overlay>
                 </div>
-                <div className="header__logo__container">
-                    <Link className="header__logo__container__logo" to="/">
-                        <img src={logo} alt="logo" className="logo"/>
-                    </Link>
-                </div>
-                <div className={`header__options`}>
-                    <Link className="header__options__option" to="/">projects</Link>
-                    <Link className="header__options__option" to="/about">about</Link>
-                    <Link className="header__options__option" to="/contact">contact</Link>
-                    <div className="header__options__hamburger" role="button"
+                {/*<div className="bar__logo__container">*/}
+                {/*    <Link className="bar__logo__container__logo" to="/">*/}
+                {/*        <img src={logo} alt="logo" className="logo"/>*/}
+                {/*    </Link>*/}
+                {/*</div>*/}
+                <div className={`bar__options`}>
+                    <Link className="bar__options__option" to="/">Projects</Link>
+                    <Link className="bar__options__option" to="/about">About</Link>
+                    <Link className="bar__options__option" to="/contact">Contact</Link>
+                    <div className="bar__options__hamburger" role="button"
                          onClick={() =>
                              setStatus(status === "open" ? "close" : "open")
                          }>

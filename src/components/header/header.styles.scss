@@ -1,45 +1,35 @@
-.header {
-  height: 15vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  background: linear-gradient(180deg,
-          #111, rgba(17, 17, 17, 0));
-  font-weight: bolder;
+.bar {
   position: fixed;
   top: 0;
   z-index: 50000;
   font-family: 'Montserrat', sans-serif;
 
-  &__logo__container {
-    color: #FCFCFC;
-    position: absolute;
-    top: 15px;
-    opacity: 1 !important;
-
-    &__logo {
-      margin-left: 2vw;
-
-      .logo {
-        width: 100px;
-        cursor: none;
-        user-select: none;
-      }
-    }
-
-  }
+  //&__logo__container {
+  //  color: #FCFCFC;
+  //  position: absolute;
+  //  top: 15px;
+  //  opacity: 1 !important;
+  //
+  //  &__logo {
+  //    margin-left: 2vw;
+  //
+  //    .logo {
+  //      width: 100px;
+  //      cursor: none;
+  //      user-select: none;
+  //    }
+  //  }
+  //
+  //}
 
   &__options {
-    width: 50%;
-    top: 15px;
+    top: 25em;
     position: absolute;
     display: grid;
-    left: 48.66667vw;
+    left: 87.66667000000001vw;
     align-items: center;
     justify-content: flex-end;
     opacity: 1 !important;
-
     &__hamburger {
       display: none;
     }
@@ -51,9 +41,9 @@
     }
 
     &__option {
-      padding: 5px 15px;
+      padding: 3px 15px;
       margin-right: 3vw;
-      color: #FCFCFC;
+      color: whitesmoke;
       cursor: none;
       text-align: left;
       text-decoration: none;
@@ -61,7 +51,8 @@
 
 
       &:hover {
-        color: #adcae6;
+        background-color: rgba(252, 252, 252, 0.3);
+        border-radius: .5em;
         text-decoration: underline;
         transition: all .3s ease-in-out;
       }
@@ -75,7 +66,19 @@
 }
 
 @media (max-width: 600px) {
-  .header {
+  .bar {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background: linear-gradient(180deg,
+            #111, rgba(17, 17, 17, 0));
+    font-weight: bolder;
+    position: fixed;
+    top: 0;
+    z-index: 50000;
+
     &__logo__container {
       .logo {
         position: absolute;
