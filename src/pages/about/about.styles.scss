@@ -1,66 +1,84 @@
+//.about {
+//  position: relative;
+//  text-align: center;
+//  margin-top: 7em;
+//
+//  .who-am-i {
+//    width: 80%;
+//    margin: 0 auto;
+//
+//    h2 {
+//      text-align: left;
+//      font-weight: 600;
+//      font-size: 36px;
+//    }
+//  }
+//
+//  &__container {
+//    width: 80%;
+//    margin: 0 auto;
+//    display: flex;
+//    overflow: hidden !important;
+//
+//    h2 {
+//      font-weight: bolder;
+//      font-size: 49px;
+//    }
+//  }
+//
+//  &__resume {
+//    margin-top: 5em;
+//
+//    .horizontal__line {
+//      border-bottom: 1px solid #FCFCFC;
+//      width: 80%;
+//      margin: 0 auto;
+//    }
+//
+//    .resume {
+//      margin-top: 5em;
+//
+//      h2 {
+//        margin-bottom: 2em;
+//      }
+//
+//      .resume-image {
+//        width: 30em;
+//      }
+//
+//      .btn {
+//        margin: 2em 0;
+//
+//        button {
+//          margin: 0 auto;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: 1250px) {
+//    .about {
+//      &__container {
+//        display: block;
+//      }
+//    }
+//}
 .about {
+  width: 80vw;
+  height: 100vh;
+  margin-left: 6vw;
   position: relative;
-  text-align: center;
-  margin-top: 7em;
 
-  .who-am-i {
-    width: 80%;
-    margin: 0 auto;
-
-    h2 {
-      text-align: left;
-      font-weight: 600;
-      font-size: 36px;
-    }
-  }
-
-  &__container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    overflow: hidden !important;
-
-    h2 {
-      font-weight: bolder;
-      font-size: 49px;
-    }
-  }
-
-  &__resume {
+  &_header_container {
+    text-align: left;
+    margin-left: 8vw;
     margin-top: 5em;
 
-    .horizontal__line {
-      border-bottom: 1px solid #FCFCFC;
-      width: 80%;
-      margin: 0 auto;
+    .about-header {
+      font-size: 45px;
+      font-weight: bold;
     }
 
-    .resume {
-      margin-top: 5em;
-
-      h2 {
-        margin-bottom: 2em;
-      }
-
-      .resume-image {
-        width: 30em;
-      }
-
-      .btn {
-        margin: 2em 0;
-
-        button {
-          margin: 0 auto;
-        }
-      }
-    }
   }
-}
-
-@media (max-width: 1250px) {
-    .about {
-      &__container {
-        display: block;
-      }
-    }
 }

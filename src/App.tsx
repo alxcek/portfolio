@@ -28,7 +28,7 @@ function App() {
                     </div>
                 ) : (
                     <div className="main">
-                        <Cursor />
+                        {/*<Cursor />*/}
                         <Header/>
                         <Switch>
                             <Route exact path='/' component={HomePage} />

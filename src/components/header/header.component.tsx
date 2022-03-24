@@ -5,8 +5,6 @@ import "./header.styles.scss";
 import Hamburger from "../hamburger-button/hamburger.component";
 import Overlay from "../overlay/overlay.component";
 
-import logo from "../../assets/logo.svg";
-
 
 const Header = () => {
     const [status, setStatus] = useState("close");
@@ -30,7 +28,7 @@ const Header = () => {
                 {/*    </Link>*/}
                 {/*</div>*/}
                 <div className={`bar__options`}>
-                    <Link className="bar__options__option" to="/">Projects</Link>
+                    <Link className="bar__options__option" to="/">Work</Link>
                     <Link className="bar__options__option" to="/about">About</Link>
                     <Link className="bar__options__option" to="/contact">Resume</Link>
                     <div className="bar__options__hamburger" role="button"
