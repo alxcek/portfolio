@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import github from "../../assets/github.svg";
-import linkedin from "../../assets/linkedin.svg";
-import email from "../../assets/email.svg";
+import github from "../../assets/props/github.svg";
+import linkedin from "../../assets/props/linkedin.svg";
+import email from "../../assets/props/email.svg";
 
 import "./home-page.styles.scss";
 import ArrowDown from "../../components/arrow-down/arrow-down.component";

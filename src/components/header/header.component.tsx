@@ -18,7 +18,7 @@ const Header = () => {
                               onClick={() => setStatus("close")}>HOME</Link>
                         <Link className="bar__overlay__list__option" to="/about"
                               onClick={() => setStatus("close")}>ABOUT</Link>
-                        <Link className="bar__overlay__list__option" to="/contact"
+                        <Link className="bar__overlay__list__option" to="/"
                               onClick={() => setStatus("close")}>RESUME</Link>
                     </Overlay>
                 </div>
@@ -30,7 +30,7 @@ const Header = () => {
                 <div className={`bar__options`}>
                     <Link className="bar__options__option" to="/">Work</Link>
                     <Link className="bar__options__option" to="/about">About</Link>
-                    <Link className="bar__options__option" to="/contact">Resume</Link>
+                    <Link className="bar__options__option" to="/">Resume</Link>
                     <div className="bar__options__hamburger" role="button"
                          onClick={() =>
                              setStatus(status === "open" ? "close" : "open")

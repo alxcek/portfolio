@@ -3,11 +3,10 @@ import {Link} from "react-router-dom";
 
 import "./footer.styles.scss";
 
-import email from "../../assets/email.svg";
-import github from "../../assets/github.svg";
-import linkedin from "../../assets/linkedin.svg";
-import logo from "../../assets/logo.svg";
-import arrow_up from "../../assets/arrow-up.png";
+import email from "../../assets/props/email.svg";
+import github from "../../assets/props/github.svg";
+import linkedin from "../../assets/props/linkedin.svg";
+import arrow_up from "../../assets/props/arrow-up.png";
 
 const Footer = () => {
 

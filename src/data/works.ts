@@ -1,4 +1,4 @@
-import test from "../assets/test2.png";
+import test from "../assets/props/test2.png";
 
 export const works = [
     {
