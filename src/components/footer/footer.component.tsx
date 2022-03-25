@@ -24,14 +24,9 @@ const Footer = () => {
                         <Link to='/about'>About</Link>
                         <Link to='/contact' className="contact">Resume</Link>
                     </div>
-                    <div className="footer__content__image_holder">
-                        <Link to="/">
-                            <img src={logo} alt="logo" className="logo"/>
-                        </Link>
+                    <div className="year">
+                        Aleksa Cekić @ 2022
                     </div>
-                </div>
-                <div className="year">
-                    @Aleksa Cekić 2022
                 </div>
                 <div className="footer__content__info">
                     <div className="address">
@@ -47,7 +42,8 @@ const Footer = () => {
                         <a href="https://github.com/yxngalex" target="_blank" rel="noreferrer">
                             <img src={github} className="github" alt={github}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/aleksa-ceki%C4%87-347148224" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/aleksa-ceki%C4%87-347148224" target="_blank"
+                           rel="noreferrer">
                             <img src={linkedin} className="linkedin" alt={linkedin}/>
                         </a>
                     </div>
@@ -56,7 +52,9 @@ const Footer = () => {
             <div className="footer__bottom">
                 <div className="horizontal-line"/>
                 <div className="scroll-up" onClick={scrollToTop}>
-                    <img src={arrow_up} alt="scroll_up" className="arrow"/>
+                    <div className="scroll-up-animation">
+                        <img src={arrow_up} alt="scroll_up" className="arrow"/>
+                    </div>
                 </div>
             </div>
         </footer>

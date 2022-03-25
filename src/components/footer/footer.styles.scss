@@ -28,7 +28,6 @@
           color: #FCFCFC;
           margin-right: 1em;
           margin-bottom: 66px;
-          cursor: none;
         }
 
         .contact {
@@ -44,13 +43,12 @@
 
       img {
         width: 7em;
-        cursor: none;
       }
     }
 
     .year {
-      margin-top: 11.5em;
-      font-size: 14px;
+      margin-top: 9em;
+      font-size: 15px;
     }
 
     &__info {
@@ -66,11 +64,10 @@
         user-select: none;
 
         a {
-          cursor: none;
         }
 
         img {
-          margin-right: 1em;
+          margin-right: 2em;
           width: 20px;
         }
       }
@@ -90,13 +87,17 @@
       text-align: center;
       width: 100%;
       height: 150%;
-      cursor: none;
+      cursor: pointer;
 
-      img {
-        margin-top: 1em;
-        width: 3em;
-        cursor: none;
+      &-animation {
+        animation: animate-arrow 1s ease-in-out infinite;
+
+        img {
+          margin-top: 1em;
+          width: 40px;
+        }
       }
+
 
       &:hover {
         transition: all .6s ease-in-out;
@@ -104,7 +105,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 600px) {
@@ -153,5 +153,16 @@
       }
 
     }
+  }
+}
+
+@keyframes animate-arrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translateY(10px);
   }
 }
