@@ -12,7 +12,7 @@ const AboutPage = () => {
 
     return (
         <div className="about">
-            <Grid/>
+            <Grid />
         </div>
     )
 }

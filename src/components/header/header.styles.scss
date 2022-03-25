@@ -15,7 +15,6 @@
   //
   //    .logo {
   //      width: 100px;
-  //      cursor: none;
   //      user-select: none;
   //    }
   //  }
@@ -44,8 +43,7 @@
       padding: 3px 15px;
       margin-right: 3vw;
       color: whitesmoke;
-      cursor: none;
-      text-align: left;
+      text-align: center;
       text-decoration: none;
       font-size: 2vh;
 
@@ -53,8 +51,7 @@
       &:hover {
         background-color: rgba(252, 252, 252, 0.3);
         border-radius: .5em;
-        text-decoration: underline;
-        transition: all .3s ease-in-out;
+        transition: background-color .3s ease-in-out;
       }
     }
   }
