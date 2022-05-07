@@ -1,5 +1,6 @@
 import React from "react";
 import {GalleryTypeProps} from "../../@types/Gallery";
+import {Link} from "react-router-dom";
 
 import "./gallery-layout.styles.scss";
 
@@ -21,7 +22,9 @@ const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeP
                     <div className="number">{number}</div>
                     <div className="name">{name}</div>
                     <div className="desc">{description}</div>
-                    <div className="link"><a href={link}>Read more</a></div>
+                    <div className="link">
+                        <Link to={link!}>Read more</Link>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,22 @@
 .bar {
-  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  //background: linear-gradient(180deg,
+  //        #111, rgba(17, 17, 17, 0));
+  background: transparent;
   top: 0;
   z-index: 50000;
+  position: fixed;
   font-family: 'Montserrat', sans-serif;
+
+  &:hover {
+    background: #111;
+    color: #FCFCFC;
+    transition: .3s ease-in-out;
+  }
 
   //&__logo__container {
   //  color: #FCFCFC;
@@ -22,13 +36,15 @@
   //}
 
   &__options {
-    top: 25em;
+    width: 50%;
+    top: 28px;
     position: absolute;
-    display: grid;
-    left: 87.66667000000001vw;
+    display: flex;
+    left: 48.66667vw;
     align-items: center;
     justify-content: flex-end;
     opacity: 1 !important;
+
     &__hamburger {
       display: none;
     }
@@ -41,12 +57,12 @@
 
     &__option {
       padding: 3px 15px;
-      margin-right: 3vw;
-      color: whitesmoke;
-      text-align: center;
+      margin-right: 1vw;
+      color: #FCFCFC;
+      cursor: pointer;
+      text-align: left;
       text-decoration: none;
       font-size: 2vh;
-
 
       &:hover {
         background-color: rgba(252, 252, 252, 0.3);
@@ -83,6 +99,7 @@
         width: 5rem;
       }
     }
+
     &__options {
       position: absolute;
       top: 36px;

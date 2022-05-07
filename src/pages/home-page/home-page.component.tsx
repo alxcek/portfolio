@@ -58,9 +58,9 @@ const HomePage = () => {
                     <ArrowDown/>
                 </div>
             </div>
-            <div className="projects-view">
+            <React.Fragment>
                 <Projects/>
-            </div>
+            </React.Fragment>
             <div className="foot">
                 <Footer/>
             </div>
