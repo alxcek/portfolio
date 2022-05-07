@@ -1,13 +1,13 @@
-import test from "../assets/props/test2.png";
+import metropolitan from "../assets/props/uni.png";
 
 export const works = [
     {
         id: 1,
         number: "01",
-        name: "Test",
-        description: "Intern at Google, Test sample",
+        name: "ISUM",
+        description: "Intern at Innovative Software Technologies (IST)",
         link: "/isum",
-        imgPath: test,
+        imgPath: metropolitan,
         color: "black",
     }
 ]

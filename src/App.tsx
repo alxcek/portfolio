@@ -18,7 +18,7 @@ function App() {
     }, []);
 
     return (
-        <main>
+        <React.Fragment>
             {
                 loading ? (
                     <div className="loader">
@@ -26,7 +26,6 @@ function App() {
                     </div>
                 ) : (
                     <div className="main">
-                        {/*<Cursor />*/}
                         <Header/>
                         <Switch>
                             <Route exact path='/' component={HomePage} />
@@ -35,7 +34,7 @@ function App() {
                     </div>
                 )
             }
-        </main>
+        </React.Fragment>
     );
 }
 

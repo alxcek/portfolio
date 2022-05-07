@@ -31,7 +31,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div>
+        <React.Fragment>
             <div className="home-page" style={{opacity}}>
                 <div className="home-page__text">
                     <h4>
@@ -64,7 +64,7 @@ const HomePage = () => {
             <div className="foot">
                 <Footer/>
             </div>
-        </div>
+        </React.Fragment>
     );
 }
 
