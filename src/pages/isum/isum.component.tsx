@@ -8,24 +8,23 @@ const Isum = () => {
             <div className="image__container"/>
             <div className="info__container">
                 <div className="boxes">
-                    <div className="info">
-                        <div>about project</div>
-                        <div>isum</div>
-                        <div>
-                            A new informational system for university metropolitan.
-                        </div>
-                        <div>
-                            Duration: 1 week
-                            akljsdklasjd
-                            aklsdjkasldjklasd
-                        </div>
+                    <div className="overview">
+                        <div className="overview__label">Overview</div>
                     </div>
-                    <div className="description">
-                        <div>
-                            description
+                    <div className="project__description">
+                        <div className="project__description__label">
+                            <div className="small-txt">
+                                name
+                            </div>
+                            ISUM
                         </div>
-                        <div>
-                            Isum is aklsjdlkajsdklasdjklaskdjalksdjlaks.
+                        <div className="project__description__desc">
+                            <div className="small-txt">
+                                introduction
+                            </div>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
                         </div>
                     </div>
                 </div>
