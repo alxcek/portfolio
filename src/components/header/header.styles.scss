@@ -10,10 +10,10 @@
   top: 0;
   z-index: 50000;
   position: fixed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   &:hover {
-    background: #111;
+    background: rgba(43, 43, 43, .9);
     color: #FCFCFC;
     transition: .3s ease-in-out;
   }
@@ -37,7 +37,7 @@
 
   &__options {
     width: 50%;
-    top: 28px;
+    top: 20px;
     position: absolute;
     display: flex;
     left: 48.66667vw;
