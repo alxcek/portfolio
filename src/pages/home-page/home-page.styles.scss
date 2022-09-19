@@ -8,186 +8,22 @@
   background-color: #111111;
   z-index: -200;
 
-  &__text {
+  &__home-info {
     z-index: 1;
-    text-align: left;
-    margin-top: 20em;
+    margin-top: 15em;
     margin-left: 13vw;
     transform: translateY(50%);
-    font-family: "Poppins", sans-serif;
-    color: #FCFCFC;
-
-    h2 {
-      font-size: 7vh;
-      margin: 0;
-    }
-
-    h3 {
-      font-size: 25px !important;
-      margin-top: 1em;
-    }
-
-    h4 {
-      font-size: 20px !important;
-      margin: 0;
-      line-height: 1em;
-    }
-
-
-    span {
-      color: #adcae6;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
-      transform: translateY(50%);
-      //font-size: 18px;
-      text-transform: uppercase;
-    }
-
-    span:before {
-      content: 'Front-end Developer';
-      animation: change-text 7s infinite;
-    }
-  }
-
-  &__description {
-    color: #FCFCFC;
-    justify-content: center !important;
-    text-align: left;
-    margin: 6em auto 0;
-
-    &__desc {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.9vh;
-    }
-
-    &__text {
-      font-family: "Poppins", sans-serif;
-
-      &__links {
-        display: inline-block;
-        align-items: center;
-        margin-left: 12vw;
-
-        a {
-          text-decoration: none;
-        }
-
-        .github {
-          width: 30px;
-        }
-
-        img {
-          width: 20px;
-          margin-left: 1rem;
-          vertical-align: middle;
-        }
-      }
-    }
   }
 
   &__arrow {
     position: relative !important;
-    margin-top: 19vh;
+    margin-top: 24vh;
+    top: 24vh;
     bottom: 0;
     cursor: default;
   }
-}
 
-@media (max-width: 770px) {
-  .home-page {
-
-    &__text {
-      margin-top: 15em !important;
-      text-align: center;
-      margin-left: 0;
-    }
-
-    &__description {
-      &__text {
-
-        &__links {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: 2em;
-          margin-left: 0;
-
-          .mail {
-            width: 30px;
-            margin-left: 0;
-          }
-
-          .github {
-            width: 30px;
-          }
-
-          .linkedin {
-            width: 30px;
-          }
-
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .home-page {
-
-    &__text {
-      margin-top: 10em;
-
-      h2, h3 {
-        font-size: 4vh !important;
-      }
-
-      h3 {
-        font-size: 18px !important;
-      }
-    }
-
-    &__description {
-      &__text {
-        font-size: 10px;
-
-        &__links {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-left: 0;
-
-          .mail {
-            width: 30px;
-            margin-left: 0;
-          }
-
-          .github {
-            width: 30px;
-          }
-
-          .linkedin {
-            width: 30px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@keyframes change-text {
-  10% {
-    content: 'Front-end Developer';
-  }
-  30% {
-    content: 'Back-end Developer';
-  }
-  50% {
-    content: 'Web Designer';
-  }
-  70% {
-    content: 'Student';
-  }
-  90% {
-    content: "Software Engineer";
+  .testing {
+    z-index: 50000;
   }
 }

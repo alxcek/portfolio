@@ -2,6 +2,7 @@ import React from "react";
 
 import "./loader.styles.scss";
 
+// Change the layout to say Aleksa Cekic Portfolio
 const Loader = () => {
     return (
         <div className="wrapper">
