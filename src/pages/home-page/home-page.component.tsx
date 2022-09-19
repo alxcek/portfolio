@@ -35,7 +35,6 @@ const HomePage = () => {
         setClicked(clicked === "home" ? "about" : "home");
     }
 
-    // Change so that home page changes with the about, and add a menu
     return (
         <React.Fragment>
             <div className="home-page" style={{opacity}}>

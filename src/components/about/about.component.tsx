@@ -19,8 +19,8 @@ const AboutPage = () => {
                     <span>student who believes</span>
                     <span>that software engineering</span>
                     <span>is a path</span>
-                    <span>of the future.</span>
-                    <span>He's a fourth year</span>
+                    <span>to the future.</span>
+                    <span>He's a fourth-year</span>
                     <span>student at University Metropolitan</span>
                     <span>with a mission</span>
                     <span>to learn and adapt</span>
