@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 // import Loader from "./components/loader/loader.component";
 import {Route, Switch} from "react-router-dom";
-import Header from "./components/header/header.component";
+// import Header from "./components/header/header.component";
 import HomePage from "./pages/home-page/home-page.component";
 
 import "./App.scss";

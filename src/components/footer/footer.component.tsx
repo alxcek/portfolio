@@ -19,8 +19,8 @@ const Footer = () => {
             <div className="footer__content">
                 <div className="footer__content__links">
                     <div className="links">
-                        <Link to='/'>Works</Link>
-                        <Link to='/about'>About</Link>
+                        {/*<Link to='/'>Works</Link>*/}
+                        {/*<Link to='/about'>About</Link>*/}
                         <Link to='/contact' className="contact">Resume</Link>
                     </div>
                     <div className="year">

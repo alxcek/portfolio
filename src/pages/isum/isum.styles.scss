@@ -1,5 +1,5 @@
 .small-txt {
-  font-size: 10px;
+  font-size: 13px;
   color: #9c9c9c;
   font-weight: normal;
   margin-bottom: 1em;
@@ -7,39 +7,59 @@
 
 
 .isum {
-  width: 100%;
-  display: block;
   position: relative;
+  display: block;
+
+  .back-btn {
+    z-index: 1;
+    width: 95%;
+    position: sticky;
+    margin: 0 auto;
+    top: 1vw;
+
+    .cbt {
+      color: #FCFCFC;
+      background-color: hsla(0, 0%, 59%, .2);
+      border: none;
+      border-radius: .35rem;
+      text-decoration: none;
+      display: block;
+      text-transform: uppercase;
+      padding: 0.5rem 1.5rem;
+      float: right;
+      justify-self: end;
+      cursor: pointer;
+
+      &:hover {
+        background-color: hsla(0, 0%, 11%, 0.2);
+        transition: background-color .3s ease-in-out;
+      }
+
+    }
+  }
 
   .image__container {
-    position: fixed;
-    top: 0;
-    margin: 0 auto;
-    z-index: -200;
-    width: 100%;
-    height: 72vh;
-    display: flex;
-    background-image: url("../../assets/props/uni.png");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: repeat;
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    height: 43vw;
+    top: 2vw;
+    margin: 5vh auto;
+    background: url("../../assets/props/uni.png") no-repeat center;
+    background-size: cover;
   }
 
   .info__container {
     display: flex;
-    width: 100%;
+    width: 95%;
     height: 352px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 26em;
-    background: #FCFCFC;
-    color: #111;
+    color: #FCFCFC;
 
     .boxes {
-      margin: 86px 0;
+      margin: 56px 0;
       width: 80%;
       display: flex;
       align-items: center;
@@ -65,6 +85,15 @@
 
         &__desc {
           margin-top: 1em;
+
+          &__cols {
+            margin-top: 1em;
+            display: flex;
+
+            .col {
+              margin-right: 2em;
+            }
+          }
         }
 
 
