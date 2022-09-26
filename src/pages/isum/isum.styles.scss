@@ -5,7 +5,6 @@
   margin-bottom: 1em;
 }
 
-
 .isum {
   position: relative;
   display: block;
@@ -18,10 +17,10 @@
     top: 1vw;
 
     .cbt {
-      color: #FCFCFC;
-      background-color: hsla(0, 0%, 59%, .2);
+      color: #fcfcfc;
+      background-color: hsla(0, 0%, 59%, 0.2);
       border: none;
-      border-radius: .35rem;
+      border-radius: 0.35rem;
       text-decoration: none;
       display: block;
       text-transform: uppercase;
@@ -32,9 +31,8 @@
 
       &:hover {
         background-color: hsla(0, 0%, 11%, 0.2);
-        transition: background-color .3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
       }
-
     }
   }
 
@@ -56,7 +54,8 @@
     margin: 30px auto;
     flex-direction: column;
     align-items: center;
-    color: #FCFCFC;
+    color: #fcfcfc;
+    margin-bottom: 17em;
 
     .boxes {
       margin: 56px 0;
@@ -89,16 +88,51 @@
           &__cols {
             margin-top: 1em;
             display: flex;
+            flex-direction: row;
 
             .col {
               margin-right: 2em;
             }
           }
         }
-
-
       }
+    }
+  }
+}
 
+@media (max-width: 839px) {
+  .isum {
+    .info__container {
+      text-align: center;
+
+      .boxes {
+        display: block;
+
+        .overview {
+          margin: initial;
+        }
+
+        .project__description {
+          &__desc {
+            &__cols {
+              display: flex;
+              flex-direction: column;
+
+              .col {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .isum {
+    .info__container {
+      margin-bottom: 27em;
     }
   }
 }
