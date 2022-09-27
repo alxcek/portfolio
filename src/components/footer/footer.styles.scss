@@ -1,137 +1,89 @@
 .footer {
   position: relative;
   width: 100%;
-  height: 19em;
   //background: #181818;
   background: #111;
   font-family: "Poppins", sans-serif !important;
   display: flex;
+  margin: 10px 0;
   flex-direction: column;
-  color: #FCFCFC;
+  color: #fcfcfc;
   overflow: hidden !important;
 
   &__content {
     display: flex;
     width: 80%;
-    margin: 38px auto 0;
+    margin: 0 auto;
     justify-content: space-between;
-    color: #FCFCFC;
+    color: #fcfcfc;
     vertical-align: middle;
 
-    &__links {
+    .name {
       text-align: left;
-
-      .links {
-        margin-bottom: 56px;
-
-        a {
-          color: #FCFCFC;
-          text-decoration: none;
-          margin-right: 1em;
-          margin-bottom: 66px;
-        }
-
-        .contact {
-          margin-right: 0;
-        }
-      }
-
-    }
-
-    &__image_holder {
-      margin-left: -1.5em;
-      user-select: none;
-
-      img {
-        width: 7em;
-      }
-    }
-
-    .year {
-      margin-top: 9em;
+      color: #9c9c9c;
+      text-decoration: none;
+      margin-right: 1em;
       font-size: 15px;
+      cursor: pointer;
     }
 
     &__info {
+      display: flex;
       text-align: right;
 
-      .email {
-        margin-top: 4em;
-        font-size: 14px;
-      }
-
-      .images {
-        margin-right: -1em;
-        user-select: none;
-
+      .link {
         a {
+          color: #fcfcfc;
+          text-decoration: underline;
         }
-
-        img {
-          margin-right: 2em;
-          width: 20px;
-        }
-      }
-
-    }
-  }
-
-  &__bottom {
-    margin: 0 auto;
-    width: 80%;
-
-    .horizontal-line {
-      border-bottom: 1px solid #FCFCFC;
-    }
-
-    .scroll-up {
-      text-align: center;
-      width: 100%;
-      height: 150%;
-      cursor: pointer;
-
-      &-animation {
-        animation: animate-arrow 1s ease-in-out infinite;
-
-        img {
-          margin-top: 1em;
-          width: 40px;
+        &:not(:last-child) {
+          margin-right: 13vw;
         }
       }
+    }
 
+    &__bottom {
+      margin: 0 auto;
+      width: 80%;
 
-      &:hover {
-        transition: all .6s ease-in-out;
-        background: #1d1d1d;
+      .horizontal-line {
+        border-bottom: 1px solid #fcfcfc;
+      }
+
+      .scroll-up {
+        text-align: center;
+        width: 100%;
+        height: 150%;
+        cursor: pointer;
+
+        &-animation {
+          animation: animate-arrow 1s ease-in-out infinite;
+
+          img {
+            margin-top: 1em;
+            width: 40px;
+          }
+        }
+
+        &:hover {
+          transition: all 0.6s ease-in-out;
+          background: #1d1d1d;
+        }
       }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 637px) {
   .footer {
     &__content {
-      &__links {
-        .links {
-          display: grid;
-
-          a {
-            margin-bottom: 1em;
-          }
-        }
-      }
-
-      .year {
-        position: absolute;
-        left: 10vw;
-        top: 2em;
-        margin-bottom: -9px;
-      }
-
-      &__image_holder {
+      .name {
         display: none;
       }
-
+      &__info {
+        text-align: center;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -139,20 +91,17 @@
 @media (max-width: 320px) {
   .footer {
     &__content {
-
       &__info {
         font-size: 10px;
 
         .email {
           font-size: 7px;
         }
-
       }
 
       .year {
         top: 1em;
       }
-
     }
   }
 }

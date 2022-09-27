@@ -2,24 +2,20 @@ import React from "react";
 import Gallery from "../gallery-layout/gallery-layout.component";
 
 import "./projects.styles.scss";
-import {works} from "../../data/works";
-
+import { works } from "../../data/works";
 
 const Projects = () => {
-    return (
-        <section className="projects">
-            <div className="projects__section">
-                {/*<div className="projects__section__header">*/}
-                {/*    <h2>Projects</h2>*/}
-                {/*</div>*/}
-                <div className="projects__section__grid">
-                    {
-                        works.map(w => <Gallery key={w.id} {...w} />)
-                    }
-                </div>
-            </div>
-        </section>
-    )
-}
+  return (
+    <section className="projects">
+      <div className="projects__section">
+        <div className="projects__section__grid">
+          {works.map((w) => (
+            <Gallery key={w.id} {...w} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Projects;

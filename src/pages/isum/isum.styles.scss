@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
     color: #fcfcfc;
-    margin-bottom: 17em;
+    margin-bottom: 10em;
 
     .boxes {
       margin: 56px 0;
@@ -129,10 +129,26 @@
   }
 }
 
+@media (max-width: 964px) {
+  .isum {
+    .info__container {
+      margin-bottom: 17em;
+    }
+  }
+}
+
 @media (max-width: 465px) {
   .isum {
     .info__container {
       margin-bottom: 27em;
+    }
+  }
+}
+
+@media (max-width: 299px) {
+  .isum {
+    .info__container {
+      margin-bottom: 30em;
     }
   }
 }
