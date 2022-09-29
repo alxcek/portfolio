@@ -34,7 +34,8 @@
       .link {
         a {
           color: #fcfcfc;
-          text-decoration: underline;
+          border-bottom: 1px dotted #fcfcfc;
+          text-decoration: none;
         }
         &:not(:last-child) {
           margin-right: 13vw;

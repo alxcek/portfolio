@@ -27,3 +27,16 @@
     z-index: 50000;
   }
 }
+
+@media (max-width: 770px) {
+  .home-page {
+    &__home-info {
+      margin: 0;
+      transform: none;
+    }
+
+    &__arrow {
+      top: 0 !important;
+    }
+  }
+}
