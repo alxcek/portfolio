@@ -7,6 +7,7 @@ import HomePage from "./pages/home-page/home-page.component";
 import "./App.scss";
 // import AboutPage from "./pages/about/about.component";
 import Isum from "./pages/isum/isum.component";
+import Esl from "./pages/esl/esl.component";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/isum" component={Isum} />
+          <Route path="/esl" component={Esl} />
         </Switch>
       </div>
       {/*    )*/}

@@ -5,6 +5,10 @@
   height: 70rem;
   margin: 0 auto;
 
+  .image-container-mobile {
+    display: none;
+  }
+
   &__text-column {
     position: relative;
     //border-right: 1px solid #FCFCFC;
@@ -18,9 +22,6 @@
         color: #111 !important;
       }
 
-      &:hover {
-        background-color: #c9c4c4 !important;
-      }
     }
 
     .block {
@@ -76,6 +77,19 @@
     display: block;
     text-align: center;
     height: 16rem;
+
+    //TBC
+    .image-container-mobile {
+      display: block;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+
+      img {
+        width: 400px;
+        border-radius: .375rem;
+      }
+    }
 
     &__text-column {
       background-color: rgba(17, 17, 17, 0) !important;

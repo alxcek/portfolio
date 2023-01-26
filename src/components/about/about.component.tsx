@@ -13,19 +13,10 @@ const AboutPage = () => {
         <React.Fragment>
             <div className="about_me">
                 <p>
-                    <span>Born in 1999</span>
-                    <span>In Nis, Serbia.</span>
-                    <span>Aleksa is a software engineer</span>
-                    <span>student who believes</span>
-                    <span>that software engineering</span>
-                    <span>is a path</span>
-                    <span>to the future.</span>
-                    <span>He's a fourth-year</span>
-                    <span>student at University Metropolitan</span>
-                    <span>with a mission</span>
-                    <span>to learn and adapt</span>
-                    <span>intuitive problem-solving skills</span>
-                    <span>into real-world applications.</span>
+                    <span>Aleksa is an experienced full-stack web developer with an emphasis</span>
+                    <span>on back-end Spring Boot applications. Born in 1999 Niš, Serbia,</span>
+                    <span>Aleksa is a senior year Software Engineering student with an interest</span>
+                    <span>for Artificial Intelligence, Machine Learning and generally future of Technology.</span>
                 </p>
             </div>
             <div className="description">

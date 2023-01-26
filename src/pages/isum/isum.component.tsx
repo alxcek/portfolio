@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import "./isum.styles.scss";
 
 import Details from "../../components/details/details.component";
-import img from "../../assets/props/uni.png";
+import img from "../../assets/props/uni_1.png";
 
 const Isum = () => {
   useEffect(() => {

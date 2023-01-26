@@ -16,6 +16,9 @@ const Gallery = ({number, name, description, link, imgPath, color}: GalleryTypeP
 
     return (
         <div className="gallery">
+            <div className="image-container-mobile">
+                <img src={`${imgPath}`} alt="image-container-mobile" />
+            </div>
             <div className="gallery__image-column" style={style}/>
             <div className={`gallery__text-column ${color} ? "white" : ""`}>
                 <div className="block">
