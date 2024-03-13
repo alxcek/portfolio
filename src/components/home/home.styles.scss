@@ -5,7 +5,7 @@
   float: left;
 
   h2 {
-    font-size: 7vh;
+    font-size: 11vh;
     margin: 0;
   }
 
@@ -15,7 +15,7 @@
   }
 
   h4 {
-    font-size: 20px !important;
+    font-size: 30px !important;
     margin: 0;
     line-height: 1em;
   }
@@ -65,6 +65,7 @@
         font-weight: 800;
         vertical-align: super;
       }
+
       &:hover {
         color: #adcae6;
         transition: color 0.3s ease-in-out;
@@ -89,6 +90,14 @@
     text-align: center;
     margin-left: 0;
     float: none;
+
+    h2 {
+      font-size: 7vh;
+    }
+
+    h4 {
+      font-size: 20px !important;
+    }
   }
 
   .description {
