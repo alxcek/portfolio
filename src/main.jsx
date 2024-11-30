@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.scss'
-import './tailwind.css'
+import './styles/index.scss'
+import './styles/tailwind.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 

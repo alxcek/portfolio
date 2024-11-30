@@ -1,0 +1,22 @@
+html, body {
+  background: #111;
+  color: #FCFCFC;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 1440px; /* Matches the max width of your layout */
+  width: 100%; /* Ensures it stretches dynamically */
+  padding: 0 2rem; /* Add consistent padding on smaller screens */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+h1, p {
+  margin: 1rem 0;
+}
