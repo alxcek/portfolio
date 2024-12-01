@@ -11,12 +11,16 @@ html, body {
 }
 
 .container {
-  max-width: 1440px; /* Matches the max width of your layout */
-  width: 100%; /* Ensures it stretches dynamically */
-  padding: 0 2rem; /* Add consistent padding on smaller screens */
-  box-sizing: border-box; /* Includes padding in width calculation */
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 h1, p {
   margin: 1rem 0;
+}
+
+:root {
+  background: #111;
 }
