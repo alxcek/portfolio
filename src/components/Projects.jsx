@@ -9,7 +9,7 @@ const Projects = () => {
   ];
 
   return (
-     <section className="bg-[#111] text-gray-500 min-h-screen px-1 py-8 sticky top-0">
+     <section className="bg-[#111] text-gray-500 min-h-screen px-1 py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {projects.map((project, index) => (
           <div key={project.id} className="flex flex-col gap-2">
@@ -25,7 +25,6 @@ const Projects = () => {
                 <p className="text-sm m-0">{project.description}</p>
               </div>
             </div>
-            {/* Add more content as needed */}
           </div>
         ))}
       </div>
