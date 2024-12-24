@@ -2,7 +2,7 @@ import React from "react";
 import "../../public/assets/email.png";
 
 const About = () => (
-  <main className="mt-10">
+  <main className="mt-10 relative z-10 px-1">
     <div className="flex flex-col sm:flex-row justify-between gap-10">
       <div className="flex-1 text-left">
         <h2 className="text-sm font-semibold text-gray-500">ABOUT ME</h2>
@@ -27,7 +27,7 @@ const About = () => (
         </p>
       </div>
       <div className="flex-1 text-left">
-        <h2 className="text-sm font-semibold text-gray-500">CONTACT</h2>
+        <h2 className="text-sm font-semibold text-gray-500">MORE OF ME</h2>
         <div className="flex gap-4 mt-4">
           <a
             href="mailto:aleksa.cekic8@gmail.com"

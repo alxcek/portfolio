@@ -9,30 +9,27 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-[#111] text-gray-500 min-h-screen px-4 py-8">
+     <section className="bg-[#111] text-gray-500 min-h-screen px-1 py-8 sticky top-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="relative overflow-hidden rounded-lg bg-gray-800"
-          >
-            {/* Image container */}
-            <div className="relative pb-[75%]"> {/* Maintains aspect ratio */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-              />
+        {projects.map((project, index) => (
+          <div key={project.id} className="flex flex-col gap-2">
+            <div className="group relative overflow-hidden rounded-lg transform transition-transform duration-700 hover:scale-105 hover:z-10 hover:shadow-lg">
+              <div className="relative w-full">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-auto object-cover rounded-t-lg"
+                />
+              </div>
+              <div className="absolute bottom-0 w-full p-4 text-gray-200 bg-opacity-75 rounded-b-lg">
+                <p className="text-sm m-0">{project.description}</p>
+              </div>
             </div>
-
-            {/* Description section at the bottom of the image */}
-            <div className="absolute bottom-0 w-full p-4 text-gray-200 bg-opacity-75 rounded-b-lg">
-              <p className="text-sm m-0">{project.description}</p>
-            </div>
+            {/* Add more content as needed */}
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
