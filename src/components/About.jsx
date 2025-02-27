@@ -5,7 +5,7 @@ const About = () => (
   <main className="my-10 relative z-10 px-1">
     <div className="flex flex-col sm:flex-row justify-between gap-10">
       <div className="flex-1 text-left">
-        <h2 className="text-sm font-semibold text-gray-500">LITTLE ABOUT ME</h2>
+        <h2 className="text-sm font-semibold text-gray-350">LITTLE ABOUT ME</h2>
         <p>
           Greetings friend. You've stumbled upon the digital domain of Aleksa
           (Alex to most), a dysfunctional software engineer and relentless
