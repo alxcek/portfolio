@@ -1,57 +1,41 @@
 import React from "react";
-import "../../public/assets/email.png";
+import "../../public/assets/img1.png";
 
 const About = () => (
-  <main className="mt-10 relative z-10 px-1">
+  <main className="my-10 relative z-10 px-1">
     <div className="flex flex-col sm:flex-row justify-between gap-10">
       <div className="flex-1 text-left">
-        <h2 className="text-sm font-semibold text-gray-500">ABOUT ME</h2>
+        <h2 className="text-sm font-semibold text-gray-500">LITTLE ABOUT ME</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.{" "}
+          Greetings friend. You've stumbled upon the digital domain of Aleksa
+          (Alex to most), a dysfunctional software engineer and relentless
+          explorer from the buzzing corners of the modern world.
+          <br />
+          <br />
+          At this moment in universe's time, I'm living busy bringing ideas to
+          life, solving puzzles & venturing into many different technologies at
+          the same time.
+          <br />
+          When I'm not creating, you'll find me questioning everything about our
+          existance, diving into many questions many have not given a true
+          answer, pushing my understanding of life further.
+          <br />
+          <br />
+          This corner of the internet showcases the digital traces I've left
+          across projects that pushed me to think differently and break
+          boundaries. May these works spark something in your own journey
+          through this strange, beautiful technological wilderness.
+          <br />
+          <br />
+          Keep learnin'. Question everything.
         </p>
       </div>
-      <div className="flex-1 text-left">
-        <h2 className="text-sm font-semibold text-gray-500">EXPERIENCE</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.{" "}
-        </p>
-      </div>
-      <div className="flex-1 text-left">
-        <h2 className="text-sm font-semibold text-gray-500">MORE OF ME</h2>
-        <div className="flex gap-4 mt-4">
-          <a
-            href="mailto:aleksa.cekic8@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/assets/email.png"
-              alt="Email"
-              className="w-8 h-8 object-contain"
-            />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/yourlinkedin/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/assets/linkedin.svg"
-              alt="LinkedIn"
-              className="w-8 h-8 object-contain"
-            />
-          </a>
+      <div className="flex-1 text-center">
+        <div className="flex gap-4 justify-center">
+          <img
+          src="/assets/img2.png"
+          alt="image1"
+          className="h-96 object-contain mx-auto max-w-full" />
         </div>
       </div>
     </div>
