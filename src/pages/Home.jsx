@@ -7,8 +7,10 @@ const Home = () => (
   <div className="flex flex-col items-center">
     <div className="w-full px-6 max-w-[1920px]">
       <Header />
-      <About />
-      <Projects />
+      <div className="relative">
+        <About />
+        <Projects />
+      </div>
       <Footer />
     </div>
   </div>

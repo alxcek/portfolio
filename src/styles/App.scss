@@ -8,6 +8,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  ::selection {
+  background: #adcae6;
+  color: #FCFCFC;
+}
 }
 
 .container {

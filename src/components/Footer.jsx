@@ -22,7 +22,7 @@ const Footer = () => {
               rel="noreferrer"
               className="text-white border-b border-dotted border-white hover:text-gray-400"
             >
-              Resume
+              Github
             </a>
           </div>
           <div>
