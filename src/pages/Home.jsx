@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Home = () => (
   <div className="flex flex-col items-center">
-    <div className="w-full px-6 lg:max-w-[1920px]">
+    <div className="w-full px-6 max-w-[1920px]">
       <Header />
       <About />
       <Projects />

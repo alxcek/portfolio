@@ -1,38 +1,87 @@
 const Projects = () => {
-  const projects = [
-    { id: 1, image: "https://via.placeholder.com/500x400", title: "Project 4", description: "This is the fourth project." },
-    { id: 2, image: "https://via.placeholder.com/500x400", title: "Project 5", description: "This is the fifth project." },
-    { id: 3, image: "https://via.placeholder.com/500x400", title: "Project 6", description: "This is the sixth project." },
-    { id: 4, image: "https://via.placeholder.com/500x400", title: "Project 6", description: "This is the sixth project." },
-    { id: 5, image: "https://via.placeholder.com/500x400", title: "Project 4", description: "This is the fourth project." },
-    { id: 6, image: "https://via.placeholder.com/500x400", title: "Project 5", description: "This is the fifth project." },
-    { id: 7, image: "https://via.placeholder.com/500x400", title: "Project 6", description: "This is the sixth project." },
-    { id: 8, image: "https://via.placeholder.com/500x400", title: "Project 6", description: "This is the sixth project." },
-  ];
-
   return (
-     <section className="bg-[#111] text-gray-500 min-h-screen px-1 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1">
-        {projects.map((project) => (
-          <div key={project.id} className="flex flex-col gap-2">
-            <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative w-full">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto object-cover rounded-t-lg transition-all duration-300 group-hover:opacity-70"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center hover:cursor-pointer">
-                  <div className="text-white text-center">
-                    <h3 className="text-lg font-semibold">{project.title}</h3>
-                    <p className="text-sm">{project.description}</p>
-                    <p className="text-sm">View</p>
-                  </div>
-                </div>
+    <section className="bg-[#111] text-gray-500 grid relative z-10 col-start-1 col-end-13 md:grid-cols-2 gap-x-6 mb-14">
+      {/* COL - 1 */}
+      <div className="flex flex-col gap-6">
+        <div className="cursor-pointer grid w-full opacity-100 select-none group">
+          <div className="relative game-border group-hover:opacity-80">
+            <img src="https://placehold.co/950x600" alt="test" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-white text-lg mb-4">Prompt Text Here</span>
+              <div className="flex gap-2">
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 1
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 2
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 3
+                </button>
               </div>
             </div>
           </div>
-        ))}
+        </div>
+        <div className="cursor-pointer grid w-full opacity-100 select-none group">
+          <div className="relative game-border group-hover:opacity-80">
+            <img src="https://placehold.co/950x400" alt="test" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-white text-lg mb-4">Prompt Text Here</span>
+              <div className="flex gap-2">
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 1
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 2
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 3
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* COL - 2 */}
+      <div className="flex flex-col gap-6">
+        <div className="cursor-pointer grid w-full opacity-100 select-none group">
+          <div className="relative group-hover:opacity-80">
+            <img src="https://placehold.co/950x400" alt="test" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-white text-lg mb-4">Prompt Text Here</span>
+              <div className="flex gap-2">
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 1
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 2
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 3
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="cursor-pointer grid w-full opacity-100 select-none group">
+          <div className="relative game-border group-hover:opacity-80">
+            <img src="https://placehold.co/950x600" alt="test" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-white text-lg mb-4">Prompt Text Here</span>
+              <div className="flex gap-2">
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 1
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 2
+                </button>
+                <button className="bg-white text-black px-4 py-2 rounded">
+                  Button 3
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
