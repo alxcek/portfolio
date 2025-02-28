@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <nav className="sticky z-50 top-0 flex bg-[#111] items-center border-b border-white/15 justify-between px-4 py-2 text-sm shadow-sm">
       <div
-        className="flex-shrink-0 font-light text-md ml-8 cursor-pointer hover:text-gray-300 transition-colors"
+        className="flex-shrink-0 font-light text-md ml-8 cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
         onClick={scrollToTop}
       >
         Aleksa Cekić

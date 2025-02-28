@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <main
-      className="sticky my-5 top-0 px-1 transition-opacity duration-300 ease-out"
+      className="sticky my-1 top-0 px-1 transition-opacity duration-300 ease-out"
       style={{
         opacity: scrollOpacity,
         zIndex: 0,

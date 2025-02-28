@@ -20,7 +20,7 @@ const Footer = () => {
               href="https://github.com/yxngalex"
               target="_blank"
               rel="noreferrer"
-              className="text-white border-b border-dotted border-white hover:text-gray-400"
+              className="text-white border-b border-dotted border-white hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
             >
               Github
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
               href="mailto:aleksa.cekic8@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="text-white border-b border-dotted border-white hover:text-gray-400"
+              className="text-white border-b border-dotted border-white hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
             >
               Email
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/aleksa-ceki%C4%87-347148224/"
               target="_blank"
               rel="noreferrer"
-              className="text-white border-b border-dotted border-white hover:text-gray-400"
+              className="text-white border-b border-dotted border-white hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
             >
               LinkedIn
             </a>

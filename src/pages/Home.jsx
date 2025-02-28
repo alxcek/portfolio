@@ -5,15 +5,12 @@ import Footer from "../components/Footer";
 
 const Home = () => (
   <div className="flex flex-col items-center">
-    <div className="w-full px-6 max-w-[1920px]">
+    <div className="relative w-full px-6 max-w-[1920px]">
       <Header />
-      <div className="relative">
-        <About />
-        <Projects />
-      </div>
+      <About />
+      <Projects />
       <Footer />
     </div>
   </div>
 );
-
 export default Home;
