@@ -6,13 +6,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative w-full font-poppins flex flex-col overflow-hidden border-t border-white/15 bg-[#111] py-6">
+    <footer className="relative w-full font-poppins flex flex-col overflow-hidden border-t border-white/15 bg-[#111] py-6 uppercase">
       <div className="flex w-4/5 mx-auto justify-between items-center">
         <div
           className="text-left cursor-pointer text-sm"
           onClick={scrollToTop}
         >
-          Copyright @ 2025 Aleksa Cekić
+          {/* Aleksa Cekić */}
+          Let's connect:
         </div>
         <div className="flex space-x-12">
           <div>
