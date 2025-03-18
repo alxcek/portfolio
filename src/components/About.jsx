@@ -7,7 +7,7 @@ const About = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const fadeStart = 0;
-      const fadeEnd = 300;
+      const fadeEnd = 200;
 
       const progress = Math.min(
         Math.max((scrollY - fadeStart) / (fadeEnd - fadeStart), 0),
@@ -49,8 +49,14 @@ const About = () => {
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   Email
                 </span>
+                <span>
+                  /
+                </span>
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   LinkedIn
+                </span>
+                <span>
+                  /
                 </span>
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   Github
