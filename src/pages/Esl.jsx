@@ -74,7 +74,6 @@ const Esl = () => {
                     <span className="text-fill-animate">&gt;</span>
                   </Button>
                 </div>
-
               </div>
 
               <div className="mb-12 text-l">
@@ -103,8 +102,8 @@ const Esl = () => {
             </div>
           </div>
         </main>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 };
 
