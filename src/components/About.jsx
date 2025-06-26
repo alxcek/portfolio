@@ -50,13 +50,13 @@ const About = () => {
                   Email
                 </span>
                 <span>
-                  /
+                  ///
                 </span>
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   LinkedIn
                 </span>
                 <span>
-                  /
+                  ///
                 </span>
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   Github

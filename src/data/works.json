@@ -1,0 +1,26 @@
+[
+  {
+    "id": "esl",
+    "title": "Engineering Software Lab",
+    "image": "/assets/e1.png",
+    "link": "/esl"
+  },
+  {
+    "id": "project-2",
+    "title": "Project 2",
+    "image": "https://placehold.co/950x600",
+    "link": "/project-2"
+  },
+  {
+    "id": "project-3",
+    "title": "Project 3",
+    "image": "https://placehold.co/950x400",
+    "link": "/project-3"
+  },
+  {
+    "id": "met",
+    "title": "Metropolitan University",
+    "image": "/assets/u1.png",
+    "link": "/met"
+  }
+]
