@@ -29,7 +29,7 @@ const Esl = () => {
                       <div>Sep 2022 - Present</div>
                     </div>
                     <div>
-                      <div className="text-gray-400 mb-1 text-base">Responsibilities</div>
+                      <div className="text-gray-400 mb-1 text-base">Role</div>
                       <div>Software Engineer</div>
                     </div>
                     <div>
@@ -76,11 +76,14 @@ const Esl = () => {
                 </div>
               </div>
 
+              <div className="text-2xl mb-1 text-base">Involvement</div>
+              <div className="border-b border-white/15 mb-5 mt-2"></div>
+
               <div className="mb-12 text-l">
                 <div className="flex flex-col md:flex-row gap-10">
                   <div className="flex-1">
-                    <div className="text-xl mb-1 text-base">What I do</div>
-                    <div className="border-b border-white/15 mb-5 mt-2"></div>
+                    <div className="text-l mb-1 text-base">What I do</div>
+                    {/* <div className="border-b border-white/15 mb-5 mt-2"></div> */}
                     <div className="leading-relaxed">
                       I'm working on a healthcare platform that's actively used by hospitals and clinics across Italy. As part of an agile development team, I focus on building backend services and features with Spring Boot, carefully tailored to the specific needs of the healthcare industry.
                       The system is built as a microservices architecture in Java, making it easy to scale and maintain over time. I handle database versioning and migrations using Liquibase and Oracle, helping ensure reliability across different environments.
@@ -89,8 +92,8 @@ const Esl = () => {
                   </div>
 
                   <div className="flex-1">
-                    <div className="text-xl mb-1 text-base">Experience</div>
-                    <div className="border-b border-white/15 mb-5 mt-2"></div>
+                    <div className="text-l mb-1 text-base">Experience</div>
+                    {/* <div className="border-b border-white/15 mb-5 mt-2"></div> */}
                     <div className="leading-relaxed">
                       During my time at ESL, I've gotten much more confident with Spring Boot and working in a microservices setup. I learned how to handle database changes safely using Liquibase and got used to working with Oracle in real-world systems.
                       I've also gained solid experience with RabbitMQ for async communication and built up a habit of writing clean, testable backend code. Setting up Jenkins pipelines, writing scheduled jobs, and working with Docker and Kubernetes became part of my daily workflow.
