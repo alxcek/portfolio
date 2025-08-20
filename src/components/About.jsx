@@ -34,7 +34,7 @@ const About = () => {
       >
         <div className="flex flex-col sm:flex-row justify-between gap-10">
           <div className="flex-1 text-left">
-            <p className="text-3xl">
+            <p className="text-2xl">
               Aleksa engineers software. As a programmer and an engineer, his
               work spans building and maintaining many microservices with{" "}
               <span className="uppercase font-bold">Java</span> and{" "}
@@ -50,13 +50,13 @@ const About = () => {
                   Email
                 </span>
                 <span>
-                  /
+                  ///
                 </span>
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   LinkedIn
                 </span>
                 <span>
-                  /
+                  ///
                 </span>
                 <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
                   Github
