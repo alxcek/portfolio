@@ -15,25 +15,25 @@ const Esl = () => {
               />
 
               <div className="mb-12 text-l mt-2">
-                <div className="mb-1 text-base text-xl">Overview</div>
+                <div className="mb-2 font-semibold text-base text-xl uppercase">Overview</div>
                 <div className="border-b border-white/15 mb-5"></div>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-y-6">
                   <div className="md:min-w-[280px] md:mr-24">
-                    <div className="text-gray-400 mb-1 text-base">Company Name</div>
+                    <div className="text-gray-400 mb-1 text-base uppercase">Company Name</div>
                     <div className="font-semibold">Engineering Software Lab</div>
                   </div>
 
                   <div className="flex flex-wrap gap-y-4 gap-x-16">
                     <div>
-                      <div className="text-gray-400 mb-1 text-base">Duration</div>
+                      <div className="text-gray-400 mb-1 text-base uppercase">Duration</div>
                       <div>Sep 2022 - Present</div>
                     </div>
                     <div>
-                      <div className="text-gray-400 mb-1 text-base">Role</div>
+                      <div className="text-gray-400 mb-1 text-base uppercase">Role</div>
                       <div>Software Engineer</div>
                     </div>
                     <div>
-                      <div className="text-gray-400 mb-1 text-base">Tools</div>
+                      <div className="text-gray-400 mb-1 text-base uppercase">Tools</div>
                       <div className="space-y-1">
                         <div>Spring Boot</div>
                         <div>Java 17</div>
@@ -50,7 +50,7 @@ const Esl = () => {
               </div>
 
               <div className="mb-12 text-l">
-                <div className="mb-1 text-base text-xl">Company Profile</div>
+                <div className="mb-2 font-semibold text-base text-xl uppercase">Company Profile</div>
                 <div className="border-b border-white/15 mb-5 mt-2"></div>
                 <div className="leading-relaxed">
                   With around 12,000 professionals in 65 locations (in Italy, Belgium, Germany, Norway, Serbia, Spain, Sweden, Switzerland, Argentina, Brazil, and the USA), the Engineering Group designs, develops and manages innovative solutions for the business areas where digitalization is having the biggest impact, including Digital Finance, Smart Government & E-Health, Augmented City, Digital Industry, Smart Energy & Utilities, Digital Media & Communication.
@@ -76,13 +76,13 @@ const Esl = () => {
                 </div>
               </div>
 
-              <div className="text-2xl mb-1 text-base">Involvement</div>
+              <div className="text-xl mb-2 font-semibold text-base uppercase">Involvement</div>
               <div className="border-b border-white/15 mb-5 mt-2"></div>
 
               <div className="mb-12 text-l">
                 <div className="flex flex-col md:flex-row gap-10">
                   <div className="flex-1">
-                    <div className="text-l mb-1 text-base">What I do</div>
+                    <div className="text-l font-semibold mb-1 text-base uppercase">What I do</div>
                     {/* <div className="border-b border-white/15 mb-5 mt-2"></div> */}
                     <div className="leading-relaxed">
                       I'm working on a healthcare platform that's actively used by hospitals and clinics across Italy. As part of an agile development team, I focus on building backend services and features with Spring Boot, carefully tailored to the specific needs of the healthcare industry.
@@ -92,7 +92,7 @@ const Esl = () => {
                   </div>
 
                   <div className="flex-1">
-                    <div className="text-l mb-1 text-base">Experience</div>
+                    <div className="text-l font-semibold mb-2 text-base uppercase">Experience</div>
                     {/* <div className="border-b border-white/15 mb-5 mt-2"></div> */}
                     <div className="leading-relaxed">
                       During my time at ESL, I've gotten much more confident with Spring Boot and working in a microservices setup. I learned how to handle database changes safely using Liquibase and got used to working with Oracle in real-world systems.
