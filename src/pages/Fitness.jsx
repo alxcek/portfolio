@@ -62,26 +62,10 @@ const Fitness = () => {
                   with friends. Built with a modern MERN stack (MongoDB, Express, React, Node.js),
                   the application focuses on speed, reliability, and ease of use.
                 </div>
-                <div className="mt-8 flex justify-end">
-                  <Button
-                    onClick={() =>
-                      window.open(
-                        "https://github.com/",
-                        "_blank",
-                        "noopener,noreferrer"
-                      )
-                    }
-                    size="md"
-                    className="w-full max-w-[200px]"
-                  >
-                    <span className="text-fill-animate">See GitHub</span>
-                    <span className="text-fill-animate">&gt;</span>
-                  </Button>
-                </div>
               </div>
 
-              <div className="text-xl font-semibold mb-1 text-base uppercase">Involvement</div>
-              <div className="border-b border-white/15 mb-5 mt-2"></div>
+              {/* <div className="text-xl font-semibold mb-1 text-base uppercase">Involvement</div> */}
+              {/* <div className="border-b border-white/15 mb-5 mt-2"></div> */}
 
               <div className="mb-12 text-l">
                 <div className="flex flex-col md:flex-row gap-10">
@@ -116,12 +100,28 @@ const Fitness = () => {
                     </div>
                   </div>
                 </div>
+                <div className="mt-8 flex justify-end">
+                  <Button
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/",
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
+                    size="md"
+                    className="w-full max-w-[200px]"
+                  >
+                    <span className="text-fill-animate">See GitHub</span>
+                    <span className="text-fill-animate">&gt;</span>
+                  </Button>
+                </div>
               </div>
 
               {/* <div className="text-xl font-semibold mb-1 text-base uppercase">Showcase</div>
               <div className="border-b border-white/15 mb-5 mt-2"></div> */}
+              <div className="border-b border-white/15 mb-5"></div>
 
-              {/* Images + Text Section */}
               <div className="mb-20 mt-20">
                 <div className="space-y-12">
 

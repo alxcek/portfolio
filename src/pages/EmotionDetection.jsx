@@ -67,8 +67,8 @@ const EmotionDetection = () => {
                                 </div>
                             </div>
 
-                            <div className="text-xl font-semibold mb-1 text-base uppercase">Involvement</div>
-                            <div className="border-b border-white/15 mb-5 mt-2"></div>
+                            {/* <div className="text-xl font-semibold mb-1 text-base uppercase">Involvement</div> */}
+                            {/* <div className="border-b border-white/15 mb-5 mt-2"></div> */}
 
                             <div className="mb-12 text-l">
                                 <div className="flex flex-col md:flex-row gap-10">
@@ -123,6 +123,8 @@ const EmotionDetection = () => {
                                     </Button>
                                 </div>
                             </div>
+                            
+                            <div className="border-b border-white/15 mb-5"></div>
 
                             <div className="mb-20 mt-20">
                                 <div className="space-y-12">
