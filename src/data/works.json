@@ -6,16 +6,16 @@
     "link": "/esl"
   },
   {
-    "id": "project-2",
-    "title": "Project 2",
+    "id": "fitness",
+    "title": "Fitness",
     "image": "https://placehold.co/950x600",
-    "link": "/project-2"
+    "link": "/fitness"
   },
   {
-    "id": "project-3",
-    "title": "Project 3",
+    "id": "emotion",
+    "title": "Emotion Detection App",
     "image": "https://placehold.co/950x400",
-    "link": "/project-3"
+    "link": "/emotion"
   },
   {
     "id": "met",

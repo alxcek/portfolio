@@ -15,7 +15,7 @@ const Met = () => {
               />
 
               <div className="mb-12 text-l mt-2">
-                <div className="mb-1 text-base text-xl">Overview</div>
+                <div className="mb-2 text-base text-xl font-semibold">Overview</div>
                 <div className="border-b border-white/15 mb-5"></div>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-y-6">
                   <div className="md:min-w-[280px] md:mr-24">
@@ -75,14 +75,13 @@ const Met = () => {
                 </div>
               </div> */}
 
-              {/* Involvement */}
-              <div className="text-xl mb-1 text-base">Involvement</div>
+              <div className="text-xl mb-2 font-semibold text-base">Involvement</div>
               <div className="border-b border-white/15 mb-5 mt-2"></div>
 
               <div className="mb-12 text-l">
                 <div className="flex flex-col md:flex-row gap-10">
                   <div className="flex-1">
-                    <div className="text-l mb-1 text-base">What I do</div>
+                    <div className="text-l mb-2 font-semibold text-base">What I do</div>
                     <div className="leading-relaxed">
                       At Metropolitan University’s Faculty of Information Technology, I worked
                       in an agile team developing critical internal systems as part of a work-study program.
@@ -96,7 +95,7 @@ const Met = () => {
                   </div>
 
                   <div className="flex-1">
-                    <div className="text-l mb-1 text-base">Experience</div>
+                    <div className="text-l font-semibold mb-2 text-base">Experience</div>
                     <div className="leading-relaxed">
                       During my time at Metropolitan, I built full-stack features using Angular,
                       TypeScript, HTML5, and CSS3 on the frontend, and Java Spring Boot on the backend.
