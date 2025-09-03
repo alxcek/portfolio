@@ -8,11 +8,12 @@ const About = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const fadeStart = 0;
-      const fadeEnd = 200;
+      const fadeEnd = 300;
       const progress = Math.min(
         Math.max((scrollY - fadeStart) / (fadeEnd - fadeStart), 0),
         1
       );
+
       requestAnimationFrame(() => {
         setScrollOpacity(1 - progress);
       });
@@ -25,10 +26,10 @@ const About = () => {
   return (
     <section className="sticky top-0 z-0 flex items-center justify-center min-h-screen">
       <main
-        className="px-8 max-w-4xl w-full transition-opacity duration-300 ease-out"
+        className="px-8 max-w-4xl w-full transition-opacity duration-200 ease-out"
         style={{
           opacity: scrollOpacity,
-          pointerEvents: scrollOpacity < 0.2 ? "none" : "auto",
+          pointerEvents: scrollOpacity < 0.1 ? "none" : "auto",
         }}
       >
         <div className="text-center mb-16">
@@ -40,12 +41,11 @@ const About = () => {
             and <span className="inline-flex items-center mx-2 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
             <span className="uppercase font-bold">Python</span> and its libraries for machine learning.
           </p>
-
-          <div className="text-lg text-gray-400 mt-8">
-            Previously building solutions with{" "}
+          {/* <div className="text-lg text-gray-400 mt-8">
+            Building solutions with{" "}
             <span className="font-semibold uppercase">JAVA</span>{" "}
             <span className="font-semibold uppercase">SPRING BOOT</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="text-center text-lg uppercase tracking-wider space-x-6">
@@ -62,7 +62,9 @@ const About = () => {
           </span>
         </div>
 
-        <div className="fixed bottom-20 left-1/2 transform -translate-x-1/2">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                top-2/3 sm:top-3/4 md:top-[80%] lg:top-[75%]
+                block max-[810px]:hidden">
           <Arrow />
         </div>
       </main>
