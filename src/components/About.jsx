@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Arrow from "./Arrow";
 
 const About = () => {
   const [scrollOpacity, setScrollOpacity] = useState(1);
@@ -30,15 +31,14 @@ const About = () => {
           pointerEvents: scrollOpacity < 0.2 ? "none" : "auto",
         }}
       >
-        {/* About Content */}
         <div className="text-center mb-16">
           <p className="text-4xl md:text-5xl mb-6 leading-relaxed">
             Aleksa is a <span className="italic font-semibold">software engineer</span> at{" "}
             <span className="font-medium">Niš, Serbia</span>. He has experience{" "}
-            <span className="inline-flex items-center mx-1 text-[#FF4D4D]">✱</span> building and maintaining many microservices,{" "}
-            <span className="inline-flex items-center mx-1 text-[#FF4D4D]">✦</span> designing resilient relational database systems,
-            and <span className="inline-flex items-center mx-1 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
-            <span className="uppercase">Python</span> and its libraries for machine learning.
+            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✱</span> building and maintaining many microservices,{" "}
+            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✦</span> designing resilient relational database systems,
+            and <span className="inline-flex items-center mx-2 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
+            <span className="uppercase font-bold">Python</span> and its libraries for machine learning.
           </p>
 
           <div className="text-lg text-gray-400 mt-8">
@@ -48,7 +48,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Contact Links */}
         <div className="text-center text-lg uppercase tracking-wider space-x-6">
           <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
             Email
@@ -61,6 +60,10 @@ const About = () => {
           <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
             Github
           </span>
+        </div>
+
+        <div className="fixed bottom-20 left-1/2 transform -translate-x-1/2">
+          <Arrow />
         </div>
       </main>
     </section>
