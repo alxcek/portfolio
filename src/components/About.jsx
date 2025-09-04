@@ -33,19 +33,38 @@ const About = () => {
         }}
       >
         <div className="text-center mb-16">
-          <p className="text-4xl md:text-5xl mb-6 leading-relaxed">
-            Aleksa is a <span className="italic font-semibold">software engineer</span> at{" "}
-            <span className="font-medium">Niš, Serbia</span>. He has experience{" "}
-            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✱</span> building and maintaining many microservices,{" "}
-            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✦</span> designing resilient relational database systems,
+          <p className="text-3xl md:text-4xl leading-relaxed text-gray-200">
+            Aleksa is a <span className="italic font-semibold">Software Engineer</span>. He has experience{" "}
+            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✱</span> developing diverse backends and database systems,{" "}
+            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✦</span> designing intuitive user interfaces,
             and <span className="inline-flex items-center mx-2 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
-            <span className="uppercase font-bold">Python</span> and its libraries for machine learning.
+            Artificial Intelligence, experimenting with its potential.
           </p>
+
+
+
           {/* <div className="text-lg text-gray-400 mt-8">
             Building solutions with{" "}
             <span className="font-semibold uppercase">JAVA</span>{" "}
             <span className="font-semibold uppercase">SPRING BOOT</span>
           </div> */}
+          <div className="mt-8 flex items-center justify-center space-x-12 text-gray-400 text-sm">
+            <div className="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 10c0 5-9 11-9 11S3 15 3 10a9 9 0 1118 0z" />
+              </svg>
+              <span>Niš, Serbia</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+              </svg>
+              <span>{new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
+            </div>
+          </div>
         </div>
 
         <div className="text-center text-lg uppercase tracking-wider space-x-6">
@@ -63,8 +82,8 @@ const About = () => {
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2
-                top-2/3 sm:top-3/4 md:top-[80%] lg:top-[75%]
-                block max-[810px]:hidden">
+             top-[68%] sm:top-[77%] md:top-[82%] lg:top-[77%]
+             block max-[810px]:hidden">
           <Arrow />
         </div>
       </main>
