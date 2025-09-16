@@ -26,29 +26,22 @@ const About = () => {
   return (
     <section className="sticky top-0 z-0 flex items-center justify-center min-h-screen">
       <main
-        className="px-8 max-w-4xl w-full transition-opacity duration-200 ease-out"
+        className="px-4 md:px-8 max-w-4xl w-full transition-opacity duration-200 ease-out"
         style={{
           opacity: scrollOpacity,
           pointerEvents: scrollOpacity < 0.1 ? "none" : "auto",
         }}
       >
-        <div className="text-center mb-16">
-          <p className="text-3xl md:text-4xl leading-relaxed text-gray-200">
+        <div className="text-center mb-12 md:mb-16">
+          <p className="text-2xl sm:text-3xl md:text-4xl leading-relaxed text-gray-200 px-2">
             Aleksa is a <span className="italic font-semibold">Software Engineer</span>. He has experience{" "}
-            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✱</span> developing diverse backends and database systems,{" "}
-            <span className="inline-flex items-center mx-2 text-[#FF4D4D]">✦</span> designing intuitive user interfaces,
-            and <span className="inline-flex items-center mx-2 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
+            <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">✱</span> developing diverse backends and database systems,{" "}
+            <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">✦</span> designing intuitive user interfaces,
+            and <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
             Artificial Intelligence, experimenting with its potential.
           </p>
 
-
-
-          {/* <div className="text-lg text-gray-400 mt-8">
-            Building solutions with{" "}
-            <span className="font-semibold uppercase">JAVA</span>{" "}
-            <span className="font-semibold uppercase">SPRING BOOT</span>
-          </div> */}
-          <div className="mt-8 flex items-center justify-center space-x-12 text-gray-400 text-sm">
+          <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 text-gray-400 text-xs sm:text-sm">
             <div className="flex items-center space-x-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z" />
@@ -67,15 +60,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className="text-center text-lg uppercase tracking-wider space-x-6">
+        <div className="text-center text-base md:text-lg uppercase tracking-wider flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
             Email
           </span>
-          <span className="text-gray-400">///</span>
+          <span className="text-gray-400 hidden sm:inline">///</span>
           <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
             LinkedIn
           </span>
-          <span className="text-gray-400">///</span>
+          <span className="text-gray-400 hidden sm:inline">///</span>
           <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
             Github
           </span>
@@ -83,7 +76,7 @@ const About = () => {
 
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2
              top-[68%] sm:top-[77%] md:top-[82%] lg:top-[77%]
-             block max-[810px]:hidden">
+             hidden sm:block max-[810px]:hidden">
           <Arrow />
         </div>
       </main>
