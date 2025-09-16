@@ -22,9 +22,8 @@ const Header = () => {
       >
         Aleksa Cekić
       </div>
-
       <div className="flex items-center whitespace-nowrap text-sm">
-        <span className="mr-1">Software Engineer</span>
+        <span className="mr-1 hidden sm:inline">Software Engineer</span>
         {/* <div className="flex flex-col items-center justify-center text-gray-400" style={{ lineHeight: '0.7', gap: 0, margin: '0 4px' }}>
           <span style={{ lineHeight: '0.7', fontSize: '10px' }}>•</span>
           <span style={{ lineHeight: '0.7', fontSize: '10px' }}>•</span>
@@ -33,7 +32,6 @@ const Header = () => {
         <span className="text-xs hidden md:inline">@</span>
         <span className="ml-1 hidden md:inline">Niš, Serbia</span>
       </div>
-
       <div className="w-10 flex justify-end">
         {!isHome && (
           <button
