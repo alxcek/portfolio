@@ -33,15 +33,22 @@ const About = () => {
         }}
       >
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-2xl sm:text-3xl md:text-4xl leading-relaxed text-gray-200 px-2">
-            Aleksa is a <span className="italic font-semibold">Software Engineer</span>. He has experience{" "}
-            <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">✱</span> developing diverse backends and database systems,{" "}
-            <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">✦</span> designing intuitive user interfaces,
-            and <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">※</span> exploring the capabilities of{" "}
-            Artificial Intelligence, experimenting with its potential.
+          <p className="font-bold tracking-tight whitespace-nowrap text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+            Aleksa Cekić
           </p>
+          <div className="mt-3 flex flex-col items-center text-gray-400">
 
-          <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 text-gray-400 text-xs sm:text-sm">
+            <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-300">
+              Software Engineer
+              <span className="mx-2 text-[#FF4D4D]">•</span>
+              Artificial Intelligence
+              <span className="mx-2 text-[#FF4D4D]">•</span>
+              Design
+              <span className="mx-2 text-[#FF4D4D]">•</span>
+              Game Development
+            </p>
+          </div>
+          {/* <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 text-gray-400 text-xs sm:text-sm">
             <div className="flex items-center space-x-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z" />
@@ -57,7 +64,7 @@ const About = () => {
               </svg>
               <span>{new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="text-center text-base md:text-lg uppercase tracking-wider flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">

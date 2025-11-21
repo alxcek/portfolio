@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="flex w-full max-w-5xl mx-auto px-4 md:px-8 flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-0">
           <div className="text-left flex-1">
             <h3 className="text-xl md:text-2xl font-normal mb-3">
-              let's get in touch!{" "}
-              <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">✶</span>
+              Thanks for visiting!{" "}
+              {/* <span className="inline-flex items-center mx-1 md:mx-2 text-[#FF4D4D]">✶</span> */}
             </h3>
             <p className="text-sm text-white/60 mb-4">aleksa cekić © 2025</p>
           </div>
