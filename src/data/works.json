@@ -2,25 +2,25 @@
   {
     "id": "esl",
     "title": "Engineering Software Lab",
+    "description": "yoooooo",
     "image": "/assets/e1.png",
-    "link": "/esl"
+    "link": "/esl",
+    "tags": ["Software Engineering", "Healthcore", "2022-Present"]
   },
   {
     "id": "fitness",
     "title": "Fitness",
-    "image": "https://placehold.co/950x600",
-    "link": "/fitness"
-  },
-  {
-    "id": "emotion",
-    "title": "Emotion Detection App",
-    "image": "https://placehold.co/950x400",
-    "link": "/emotion"
+    "description": "yoooooo",
+    "image": "https://placehold.co/950x1100",
+    "link": "/fitness",
+    "tags": ["University", "Thesis", "Full-stack", "2023"]
   },
   {
     "id": "met",
     "title": "Metropolitan University",
+    "description": "Academic project showcase",
     "image": "/assets/u1.png",
-    "link": "/met"
+    "link": "/met",
+    "tags": ["Software Developer", "Work-Study", "2020-2022"]
   }
 ]

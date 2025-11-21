@@ -10,7 +10,7 @@ const Projects = () => {
     const handleResize = () => {
       const width = window.innerWidth;
       const projectCount = works.length;
-      
+
       if (width < 768) {
         setColumns(1); // Mobile: 1 column
       } else if (width < 1200 || projectCount <= 6) {
@@ -27,12 +27,12 @@ const Projects = () => {
 
   const distributeProjects = (projects, numColumns) => {
     const cols = Array.from({ length: numColumns }, () => []);
-    
+
     projects.forEach((project, index) => {
       const colIndex = index % numColumns;
       cols[colIndex].push(project);
     });
-    
+
     return cols;
   };
 
@@ -50,7 +50,26 @@ const Projects = () => {
           alt={project.title}
           className="transition duration-500 group-hover:brightness-75 w-full h-auto"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute left-3 right-3 bottom-3 flex items-end justify-between">
+          <div className="text-white leading-tight">
+            <h3 className="text-[14px] font-semibold m-0 p-0">{project.title}</h3>
+            <p className="text-[12px] opacity-90 m-0 p-0 mt-[1px]">
+              {project.description}
+            </p>
+          </div>
+          {project.tags && project.tags.length > 0 && (
+            <div className="flex gap-2 flex-wrap justify-end">
+              {project.tags.map((tag, i) => (
+                <span
+                  key={i}
+                  className="text-[12px] text-white"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </Link>
   );
