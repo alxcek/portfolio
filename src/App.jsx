@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/Scroll";
@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 import Esl from "./pages/Esl";
 import Met from "./pages/Met";
 import Fitness from "./pages/Fitness";
-import EmotionDetection from "./pages/EmotionDetection";
 
 const App = () => {
   return (
@@ -23,7 +22,7 @@ const App = () => {
             <Route path="/esl" element={<Esl />} />
             <Route path="/met" element={<Met />} />
             <Route path="/fitness" element={<Fitness />} />
-            <Route path="/emotion" element={<EmotionDetection />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
         </div>

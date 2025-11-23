@@ -44,8 +44,6 @@ const About = () => {
               Artificial Intelligence
               <span className="mx-2 text-[#FF4D4D]">•</span>
               Design
-              <span className="mx-2 text-[#FF4D4D]">•</span>
-              Game Development
             </p>
           </div>
           {/* <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 text-gray-400 text-xs sm:text-sm">
@@ -68,17 +66,30 @@ const About = () => {
         </div>
 
         <div className="text-center text-base md:text-lg uppercase tracking-wider flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
+          <a
+            href="mailto:aleksa.cekic8@gmail.com"
+            className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
+          >
             Email
-          </span>
+          </a>
           <span className="text-gray-400 hidden sm:inline">///</span>
-          <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
+          <a
+            href="https://www.linkedin.com/in/alcekic"
+            target="_blank"
+            rel="noreferrer"
+            className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
+          >
             LinkedIn
-          </span>
+          </a>
           <span className="text-gray-400 hidden sm:inline">///</span>
-          <span className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out">
+          <a
+            href="https://github.com/yxngalex"
+            target="_blank"
+            rel="noreferrer"
+            className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
+          >
             Github
-          </span>
+          </a>
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2
