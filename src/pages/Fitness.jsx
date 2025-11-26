@@ -9,7 +9,7 @@ const Fitness = () => {
           <div className="flex flex-col sm:flex-row justify-between gap-10">
             <div className="flex-1 text-left">
               <img
-                src="/assets/fitness_app_main.png"
+                src="/assets/fitness_app/fitness_login.png"
                 alt="Fitness App"
                 className="w-full mb-10 mt-10 rounded"
               />

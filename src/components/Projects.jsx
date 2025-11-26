@@ -56,7 +56,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="mt-3 px-1 flex items-center justify-between gap-3">
+      <div className="mt-3 px-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3">
         <h3 className="text-[16px] font-semibold text-white whitespace-nowrap">
           {project.title}
         </h3>
