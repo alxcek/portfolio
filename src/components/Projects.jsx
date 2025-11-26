@@ -42,35 +42,40 @@ const Projects = () => {
     <Link
       key={project.id}
       to={project.link}
-      className="cursor-pointer grid w-full opacity-100 select-none group"
+      className="
+      cursor-pointer group w-full select-none
+      transform transition duration-300
+      hover:-translate-y-2 hover:scale-[1.02]
+    "
     >
-      <div className="relative">
+      <div className="relative w-full overflow-hidden rounded-xl">
         <img
           src={project.image}
           alt={project.title}
-          className="transition duration-500 group-hover:brightness-75 w-full h-auto"
+          className="w-full h-auto rounded-xl transition duration-500 group-hover:brightness-90"
         />
-        <div className="absolute left-3 right-3 bottom-3 flex items-end justify-between">
-          <div className="text-white leading-tight">
-            <h3 className="text-[14px] font-semibold m-0 p-0">{project.title}</h3>
-            <p className="text-[12px] opacity-90 m-0 p-0 mt-[1px]">
-              {project.description}
-            </p>
-          </div>
-          {project.tags && project.tags.length > 0 && (
-            <div className="flex gap-2 flex-wrap justify-end">
-              {project.tags.map((tag, i) => (
-                <span
-                  key={i}
-                  className="text-[12px] text-white"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          )}
+      </div>
+
+      <div className="mt-3 px-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3">
+        <h3 className="text-[16px] font-semibold text-white whitespace-nowrap">
+          {project.title}
+        </h3>
+
+        <div className="flex flex-wrap gap-2">
+          {project.tags?.map((tag, i) => (
+            <span
+              key={i}
+              className="text-[13px] px-2 py-[3px] rounded-full text-white whitespace-nowrap" //bg-white/10 removed
+            >
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
+
+      <p className="mt-[6px] px-1 text-[13px] text-gray-400">
+        {project.description}
+      </p>
     </Link>
   );
 
@@ -88,7 +93,7 @@ const Projects = () => {
   };
 
   return (
-    <section className={`bg-[#111] text-gray-500 grid relative z-10 col-start-1 col-end-13 ${getGridClasses()} gap-6 mb-14`}>
+    <section className={`bg-[#111] text-gray-500 grid relative z-10 col-start-1 col-end-13 ${getGridClasses()} gap-8 mb-14`}>
       {projectColumns.map((columnProjects, colIndex) => (
         <div key={colIndex} className="flex flex-col gap-6">
           {columnProjects.map((project) => (

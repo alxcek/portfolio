@@ -9,7 +9,7 @@ const Esl = () => {
           <div className="flex flex-col sm:flex-row justify-between gap-10">
             <div className="flex-1 text-left">
               <img
-                src="/assets/e1.png"
+                src="/assets/main_logos/eng-logo.png"
                 alt="Project 1"
                 className="w-full mb-10 mt-10 rounded"
               />

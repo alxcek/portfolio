@@ -2,24 +2,24 @@
   {
     "id": "esl",
     "title": "Engineering Software Lab",
-    "description": "yoooooo",
-    "image": "/assets/e1.png",
+    "description": "Software Engineer at Engineering Software Lab, working on backend systems in the healthcare domain as part of Engineering Group’s digital transformation initiatives",
+    "image": "/assets/main_logos/eng-logo.png",
     "link": "/esl",
-    "tags": ["Software Engineering", "Healthcore", "2022-Present"]
+    "tags": ["Software Engineering", "Healthcare", "2022-Present"]
   },
   {
     "id": "fitness",
-    "title": "Fitness",
-    "description": "yoooooo",
-    "image": "https://placehold.co/950x1100",
+    "title": "Fitness App",
+    "description": "Full-stack Fitness Tracking Application developed as part of my University Thesis",
+    "image": "/assets/fitness_app/fitness_login.png",
     "link": "/fitness",
     "tags": ["University", "Thesis", "Full-stack", "2023"]
   },
   {
     "id": "met",
     "title": "Metropolitan University",
-    "description": "Academic project showcase",
-    "image": "/assets/u1.png",
+    "description": "Full-stack Developer in a Work-Study program at Metropolitan University, contributing to the development of academic web applications and internal tools",
+    "image": "/assets/main_logos/uni-logo.png",
     "link": "/met",
     "tags": ["Software Developer", "Work-Study", "2020-2022"]
   }
