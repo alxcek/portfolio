@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Esl from "./pages/Esl";
 import Met from "./pages/Met";
 import Fitness from "./pages/Fitness";
+import AboutMe from "./pages/AboutMe";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/esl" element={<Esl />} />
             <Route path="/met" element={<Met />} />
             <Route path="/fitness" element={<Fitness />} />
+            <Route path="/about" element={<AboutMe />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />

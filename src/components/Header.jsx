@@ -6,10 +6,6 @@ const Header = () => {
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const goHome = () => {
     navigate("/");
   };
@@ -18,7 +14,7 @@ const Header = () => {
     <nav className="sticky top-0 z-50 flex items-center justify-between bg-[#111] border-b border-white/15 px-6 py-2 text-sm shadow-sm h-12">
       <div
         className="flex-shrink-0 font-light text-md cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
-        onClick={scrollToTop}
+        onClick={() => navigate("/about")}
       >
         Aleksa Cekić
       </div>

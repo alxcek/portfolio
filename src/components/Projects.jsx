@@ -44,15 +44,18 @@ const Projects = () => {
       to={project.link}
       className="
       cursor-pointer group w-full select-none
-      transform transition duration-300
-      hover:-translate-y-2 hover:scale-[1.02]
+      transition duration-300
     "
     >
       <div className="relative w-full overflow-hidden rounded-xl">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-auto rounded-xl transition duration-500 group-hover:brightness-90"
+          className="
+          w-full h-auto rounded-xl 
+          transition duration-300 
+          group-hover:brightness-75
+        "
         />
       </div>
 
@@ -65,7 +68,7 @@ const Projects = () => {
           {project.tags?.map((tag, i) => (
             <span
               key={i}
-              className="text-[13px] px-2 py-[3px] rounded-full text-white whitespace-nowrap" //bg-white/10 removed
+              className="text-[13px] px-2 py-[3px] rounded-full text-white whitespace-nowrap"
             >
               {tag}
             </span>
@@ -78,6 +81,7 @@ const Projects = () => {
       </p>
     </Link>
   );
+
 
   const getGridClasses = () => {
     switch (columns) {

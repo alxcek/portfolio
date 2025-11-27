@@ -4,15 +4,17 @@ import Button from "../components/Button"
 const Fitness = () => {
   return (
     <div className="text-white bg-[#111] min-h-screen flex flex-col items-center">
-      <div className="w-full px-6 mb-10 max-w-[1920px]">
+      <img
+        src="/assets/fitness_app/fitness_login.png"
+        alt="Project 1"
+        className="w-full max-h-[60vh] sm:h-[60vh] object-cover object-center opacity-90"
+      />
+
+      <div className="w-full pt-9 px-6 mb-10 max-w-[1920px]">
         <main className="w-full">
           <div className="flex flex-col sm:flex-row justify-between gap-10">
             <div className="flex-1 text-left">
-              <img
-                src="/assets/fitness_app/fitness_login.png"
-                alt="Fitness App"
-                className="w-full mb-10 mt-10 rounded"
-              />
+
               <div className="mb-12 text-l mt-2">
                 <div className="mb-2 text-base text-xl font-semibold uppercase">Overview</div>
                 <div className="border-b border-white/15 mb-5"></div>
