@@ -26,10 +26,7 @@ const AboutMe = () => {
                         <br /><br />
                         What motivates me most is the intersection of engineering and
                         intelligence,  how machines learn, how systems behave, and how
-                        technology shapes the way we think. AI became a big part of that
-                        journey for me. Whether I’m experimenting with models, learning new
-                        concepts, or integrating smarter behavior into projects, it’s where I
-                        feel most inspired.
+                        technology shapes the way we think.
                         <br /><br />
                         I still keep the playful side of it. I enjoy video games, building tools
                         for myself, and exploring new projects simply because they’re fun. At
