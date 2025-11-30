@@ -23,7 +23,7 @@ jobs:
         script: |
           cd /var/www/aleksacekic.com/portfolio
           
-          git pull origin main
+          git pull origin master
           
           npm install
           
