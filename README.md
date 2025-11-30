@@ -58,9 +58,12 @@ This makes the portfolio easy to scale or redesign later.
 - Reusable design system  
 
 ### Deployment
-- VPS or hosting via Nginx/Proxy  
-- HTTPS enabled  
-- Custom domain
+This project utilizes a fully automated **CI/CD pipeline**:
+1.  Code is pushed to the `master` branch.
+2.  **GitHub Actions** triggers the workflow.
+3.  The runner connects to the VPS via SSH.
+4.  The latest code is pulled, dependencies are installed, and the production build is generated.
+5.  Nginx serves the optimized static files.
 
 ---
 
