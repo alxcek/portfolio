@@ -10,16 +10,16 @@ The goal of this portfolio is to provide a polished and professional overview of
 
 ## Features
 
-### 🟦 Responsive & Mobile-Friendly
+### Responsive & Mobile-Friendly
 The entire website is fully responsive, adapting seamlessly to all screen sizes — from ultrawide monitors to mobile devices.
 
-### 🟦 Modern UI/UX
+### Modern UI/UX
 - Clean and minimalistic design  
 - Consistent spacing and typography  
 - Smooth transitions and micro-interactions  
 - Personally selected color palette
 
-### 🟦 Showcase of Real Projects
+### Showcase of Real Projects
 Each project includes:
 - Title & short description  
 - Tech stack tags  
@@ -29,13 +29,13 @@ Each project includes:
 
 (New projects can easily be added through the `works.json` file.)
 
-### 🟦 High-Performance Setup
+### High-Performance Setup
 - Built with **Vite** for fast builds and a lightning-fast development experience  
 - **Tailwind CSS** for a utility-first styling approach  
 - Lazy-loaded components for optimized loading  
 - SEO-optimized metadata & structure  
 
-### 🟦 Clean Component Architecture
+### Clean Component Architecture
 The codebase is organized into reusable and modular components:
 - Project preview cards  
 - Navigation bar  
