@@ -7,7 +7,7 @@ const Met = () => {
       <img
         src="/assets/main_logos/uni-logo.png"
         alt="Project 1"
-        className="w-full max-h-[60vh] sm:h-[60vh] object-cover object-center opacity-90"
+        className="w-full aspect-[4/3] sm:aspect-video lg:aspect-[21/9] object-cover object-center opacity-90"
       />
       <div className="w-full pt-9 px-6 mb-10 max-w-[1920px]">
         <main className="w-full">
