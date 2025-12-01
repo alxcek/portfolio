@@ -42,10 +42,9 @@ const Projects = () => {
     <Link
       key={project.id}
       to={project.link}
-      className="
-      cursor-pointer group w-full select-none
-      transition duration-300
-    "
+      className="cursor-pointer group w-full select-none
+      transition-transform duration-300 ease-out transform
+      hover:scale-[0.97]"
     >
       <div className="relative w-full overflow-hidden rounded-xl">
         <img
