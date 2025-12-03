@@ -83,7 +83,7 @@ const About = () => {
           </a>
           <span className="text-gray-400 hidden sm:inline">///</span>
           <a
-            href="https://github.com/yxngalex"
+            href="https://github.com/alxcek"
             target="_blank"
             rel="noreferrer"
             className="cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
