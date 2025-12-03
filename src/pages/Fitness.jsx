@@ -132,7 +132,7 @@ const Fitness = () => {
                   <Button
                     onClick={() =>
                       window.open(
-                        "https://github.com/yxngalex/fitness-app",
+                        "https://github.com/alxcek/fitness-app",
                         "_blank",
                         "noopener,noreferrer"
                       )
