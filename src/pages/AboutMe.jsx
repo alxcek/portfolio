@@ -93,7 +93,7 @@ const AboutMe = () => {
                         <div className="flex justify-between">
                             <div>
                                 <p className="font-medium text-white">
-                                    Univerzitet Metropolitan - Faculty of Computer Science
+                                    Metropolitan University - Faculty of Computer Science
                                 </p>
                                 <p className="text-gray-400 text-sm">
                                     BSc Computer Software Engineering

@@ -1,3 +1,4 @@
+import React, { Suspense, useMemo } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -6,10 +7,29 @@ import ScrollToTop from "./components/Scroll";
 import "./styles/App.scss"
 
 import Home from "./pages/Home";
-import Esl from "./pages/Esl";
-import Met from "./pages/Met";
-import Fitness from "./pages/Fitness";
 import AboutMe from "./pages/AboutMe";
+
+import works from "./data/works.json";
+
+const pages = import.meta.glob("./pages/*.jsx");
+
+const DynamicPage = ({ componentName }) => {
+  const PageComponent = useMemo(() => {
+    const importFunc = pages[`./pages/${componentName}.jsx`];
+
+    if (!importFunc) {
+      return () => <Navigate to="/" replace />;
+    }
+
+    return React.lazy(importFunc);
+  }, [componentName]);
+
+  return (
+    <Suspense fallback={<div className="text-white text-center mt-20">Loading...</div>}>
+      <PageComponent />
+    </Suspense>
+  );
+};
 
 const App = () => {
   return (
@@ -20,10 +40,18 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/esl" element={<Esl />} />
-            <Route path="/met" element={<Met />} />
-            <Route path="/fitness" element={<Fitness />} />
             <Route path="/about" element={<AboutMe />} />
+            
+            {works.map((project) => (
+              <Route
+                key={project.id}
+                path={project.link}
+                element={
+                  <DynamicPage componentName={project.component} />
+                }
+              />
+            ))}
+            
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
