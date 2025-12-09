@@ -1,4 +1,4 @@
-import React, { Suspense, useMemo } from "react";
+import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -13,7 +13,7 @@ import AboutMe from "./pages/AboutMe";
 
 import works from "./data/works.json";
 
-const pages = import.meta.glob("./pages/*.jsx");
+const pages = import.meta.glob("./pages/*.jsx", { eager: true });
 
 const PageTransition = ({ children }) => {
   return (
@@ -30,22 +30,19 @@ const PageTransition = ({ children }) => {
 };
 
 const DynamicPage = ({ componentName }) => {
-  const PageComponent = useMemo(() => {
-    const importFunc = pages[`./pages/${componentName}.jsx`];
+  const filePath = `./pages/${componentName}.jsx`;
+  const module = pages[filePath];
 
-    if (!importFunc) {
-      return () => <Navigate to="/" replace />;
-    }
+  if (!module) {
+    return <Navigate to="/" replace />;
+  }
 
-    return React.lazy(importFunc);
-  }, [componentName]);
+  const Component = module.default;
 
-  return (
-    <Suspense fallback={<div className="h-screen w-full flex items-center justify-center">Loading...</div>}>
-      <ScrollToTop />
-      <PageComponent />
-    </Suspense>
-  );
+  return <>
+    <ScrollToTop />
+    <Component />
+  </>;
 };
 
 const App = () => {
