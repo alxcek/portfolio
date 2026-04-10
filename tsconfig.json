@@ -20,9 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Incremental migration */
-    "allowJs": true,
-    "checkJs": false,
     "resolveJsonModule": true,
     "types": ["vite/client"]
   },
