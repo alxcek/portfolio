@@ -10,7 +10,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
 }
 
-const Button = ({
+export const Button = ({
   children,
   onClick,
   size = "md",
@@ -58,5 +58,3 @@ const Button = ({
   );
 };
 
-export { Button };
-export default Button;

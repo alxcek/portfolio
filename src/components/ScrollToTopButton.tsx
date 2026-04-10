@@ -2,7 +2,7 @@ interface ScrollToTopButtonProps {
   visible: boolean;
 }
 
-const ScrollToTopButton = ({ visible }: ScrollToTopButtonProps) => {
+export const ScrollToTopButton = ({ visible }: ScrollToTopButtonProps) => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -31,5 +31,3 @@ const ScrollToTopButton = ({ visible }: ScrollToTopButtonProps) => {
   );
 };
 
-export { ScrollToTopButton };
-export default ScrollToTopButton;

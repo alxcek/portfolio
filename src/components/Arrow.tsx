@@ -1,4 +1,4 @@
-const Arrow = () => (
+export const Arrow = () => (
   <div className="relative">
     <span
       className="block w-5 h-5 border-b-2 border-r-2 border-gray-400 transform rotate-45 -m-2.5 animate-[arrowBounce_2s_infinite] pointer-events-none"
@@ -36,5 +36,3 @@ const Arrow = () => (
   </div>
 );
 
-export { Arrow };
-export default Arrow;

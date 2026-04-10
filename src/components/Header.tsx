@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
-const Header = () => {
+export const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
@@ -47,5 +47,3 @@ const Header = () => {
   );
 };
 
-export { Header };
-export default Header;

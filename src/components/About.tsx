@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Arrow from "./Arrow";
+import { Arrow } from "./Arrow";
 
-const About = () => {
+export const About = () => {
   const [scrollOpacity, setScrollOpacity] = useState(1);
 
   useEffect(() => {
@@ -103,5 +103,3 @@ const About = () => {
   );
 };
 
-export { About };
-export default About;

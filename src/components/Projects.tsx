@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import works from "../data/works.json";
-import type { Project } from "../types";
+import type { Project } from "../types/project";
 
-const Projects = () => {
+export const Projects = () => {
   const distributeProjects = (projects: Project[]): Project[][] => {
     const cols: Project[][] = [[], []];
     projects.forEach((project, index) => {
@@ -69,5 +69,3 @@ const Projects = () => {
   );
 };
 
-export { Projects };
-export default Projects;

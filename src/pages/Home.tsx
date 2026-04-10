@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import About from "../components/About";
-import Projects from "../components/Projects";
+import { About } from "../components/About";
+import { Projects } from "../components/Projects";
 
 const Home = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
