@@ -1,42 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 import works from "../data/works.json";
 
 const Projects = () => {
-  const [columns, setColumns] = useState(2);
-
-  // Responsive columns
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      const projectCount = works.length;
-
-      if (width < 768) {
-        setColumns(1); // Mobile: 1 column
-      } else if (width < 1200 || projectCount <= 6) {
-        setColumns(2); // Tablet/Desktop: 2 columns (or when 6 or fewer projects)
-      } else {
-        setColumns(3); // Large screens: 3 columns (when you have many projects)
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const distributeProjects = (projects, numColumns) => {
-    const cols = Array.from({ length: numColumns }, () => []);
-
+  const distributeProjects = (projects) => {
+    const cols = [[], []];
     projects.forEach((project, index) => {
-      const colIndex = index % numColumns;
-      cols[colIndex].push(project);
+      cols[index % 2].push(project);
     });
-
     return cols;
   };
 
-  const projectColumns = distributeProjects(works, columns);
+  const projectColumns = distributeProjects(works);
 
   const ProjectCard = ({ project }) => (
     <Link
@@ -51,8 +25,8 @@ const Projects = () => {
           src={project.image}
           alt={project.title}
           className="
-          w-full h-auto rounded-xl 
-          transition duration-300 
+          w-full h-auto rounded-xl
+          transition duration-300
           group-hover:brightness-75
         "
         />
@@ -81,22 +55,8 @@ const Projects = () => {
     </Link>
   );
 
-
-  const getGridClasses = () => {
-    switch (columns) {
-      case 1:
-        return "grid-cols-1";
-      case 2:
-        return "md:grid-cols-2";
-      case 3:
-        return "md:grid-cols-2 lg:grid-cols-3";
-      default:
-        return "md:grid-cols-2";
-    }
-  };
-
   return (
-    <section className={`bg-[#111] text-gray-500 grid relative z-10 col-start-1 col-end-13 ${getGridClasses()} gap-8 mb-14`}>
+    <section className="bg-[#111] text-gray-500 grid relative z-10 col-start-1 col-end-13 md:grid-cols-2 gap-8 mb-14">
       {projectColumns.map((columnProjects, colIndex) => (
         <div key={colIndex} className="flex flex-col gap-6">
           {columnProjects.map((project) => (
