@@ -144,7 +144,7 @@ const Home = () => {
 
   return (
     <div className="relative">
-      <div ref={aboutRef}>
+      <div ref={aboutRef} className="sticky top-0 z-0">
         <About />
       </div>
       <div ref={projectsRef} className="relative z-10 bg-[#111]">

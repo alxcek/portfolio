@@ -1,21 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Arrow } from "./Arrow";
 
 export const About = () => {
   const [scrollOpacity, setScrollOpacity] = useState(1);
+  const lastScrollY = useRef(0);
+  const targetOpacity = useRef(1);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const fadeStart = 0;
-      const fadeEnd = 300;
-      const progress = Math.min(
-        Math.max((scrollY - fadeStart) / (fadeEnd - fadeStart), 0),
-        1
-      );
+      const scrollingDown = scrollY > lastScrollY.current;
+      lastScrollY.current = scrollY;
+
+      const fadeEnd = scrollingDown ? 150 : window.innerHeight * 0.55;
+      const linear = Math.min(Math.max(scrollY / fadeEnd, 0), 1);
+      const eased = scrollingDown ? linear : linear * linear;
+
+      targetOpacity.current = 1 - eased;
 
       requestAnimationFrame(() => {
-        setScrollOpacity(1 - progress);
+        setScrollOpacity(targetOpacity.current);
       });
     };
 
@@ -24,7 +28,7 @@ export const About = () => {
   }, []);
 
   return (
-    <section className="sticky top-0 z-0 flex items-center justify-center min-h-screen">
+    <section className="flex items-center justify-center min-h-screen">
       <main
         className="px-4 md:px-8 max-w-4xl w-full transition-opacity duration-200 ease-out"
         style={{
