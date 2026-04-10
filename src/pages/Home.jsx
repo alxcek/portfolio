@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const Home = () => {
   const aboutRef = useRef(null);
@@ -132,12 +133,23 @@ const Home = () => {
       requestAnimationFrame(animateScroll);
     };
 
+    const handleScroll = () => {
+      const aboutHeight = aboutRef.current?.offsetHeight || 0;
+      if (window.scrollY < aboutHeight * 0.5) {
+        setCurrentSection('about');
+      } else {
+        setCurrentSection('projects');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('wheel', handleWheel, { passive: false });
     window.addEventListener('touchstart', handleTouchStart, { passive: true });
     window.addEventListener('touchmove', handleTouchMove, { passive: false });
     window.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     return () => {
+      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('wheel', handleWheel);
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchmove', handleTouchMove);
@@ -153,6 +165,7 @@ const Home = () => {
       <div ref={projectsRef} className="relative z-10 bg-[#111]">
         <Projects />
       </div>
+      <ScrollToTopButton visible={currentSection === 'projects'} />
     </div>
   );
 };
