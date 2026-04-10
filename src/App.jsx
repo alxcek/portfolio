@@ -1,10 +1,11 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/Scroll";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 import "./styles/App.scss";
 
@@ -48,6 +49,15 @@ const DynamicPage = ({ componentName }) => {
 const App = () => {
   const location = useLocation();
   const [footerHeight, setFooterHeight] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > window.innerHeight * 0.5);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const footerRef = useCallback((node) => {
     if (!node) return;
@@ -103,6 +113,9 @@ const App = () => {
         </div>
       </div>
       <Footer ref={footerRef} />
+      {location.pathname !== '/about' && (
+        <ScrollToTopButton visible={showScrollTop} />
+      )}
     </>
   );
 };
