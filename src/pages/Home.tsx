@@ -3,14 +3,12 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 
 const Home = () => {
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
-    let lastDeltaY = 0;
-
-    const handleWheel = (e) => {
+    const handleWheel = (e: WheelEvent) => {
       if (isScrolling) {
         e.preventDefault();
         return;
@@ -31,14 +29,13 @@ const Home = () => {
         snapToAbout();
       }
 
-      lastDeltaY = deltaY;
     };
 
-    const handleTouchStart = (e) => {
+    const handleTouchStart = (e: TouchEvent) => {
       window.touchStartY = e.touches[0].clientY;
     };
 
-    const handleTouchMove = (e) => {
+    const handleTouchMove = (e: TouchEvent) => {
       if (isScrolling || !window.touchStartY) return;
 
       const touchY = e.touches[0].clientY;
@@ -74,9 +71,9 @@ const Home = () => {
       const startY = window.scrollY;
       const distance = targetY - startY;
       const duration = 800;
-      let startTime = null;
+      let startTime: number | null = null;
 
-      const animateScroll = (currentTime) => {
+      const animateScroll = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
@@ -104,9 +101,9 @@ const Home = () => {
 
       const startY = window.scrollY;
       const duration = 700;
-      let startTime = null;
+      let startTime: number | null = null;
 
-      const animateScroll = (currentTime) => {
+      const animateScroll = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);

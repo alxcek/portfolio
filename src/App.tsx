@@ -14,9 +14,9 @@ import AboutMe from "./pages/AboutMe";
 
 import works from "./data/works.json";
 
-const pages = import.meta.glob("./pages/*.jsx", { eager: true });
+const pages = import.meta.glob<{ default: React.ComponentType }>("./pages/*.tsx", { eager: true });
 
-const PageTransition = ({ children }) => {
+const PageTransition = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -30,8 +30,8 @@ const PageTransition = ({ children }) => {
   );
 };
 
-const DynamicPage = ({ componentName }) => {
-  const filePath = `./pages/${componentName}.jsx`;
+const DynamicPage = ({ componentName }: { componentName: string }) => {
+  const filePath = `./pages/${componentName}.tsx`;
   const module = pages[filePath];
 
   if (!module) {
@@ -59,13 +59,12 @@ const App = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const footerRef = useCallback((node) => {
+  const footerRef = useCallback((node: HTMLElement | null) => {
     if (!node) return;
     const observer = new ResizeObserver(([entry]) => {
       setFooterHeight(entry.contentRect.height);
     });
     observer.observe(node);
-    return () => observer.disconnect();
   }, []);
 
   return (

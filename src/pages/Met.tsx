@@ -1,6 +1,3 @@
-import React from "react";
-import Button from "../components/Button";
-
 const Met = () => {
   return (
     <div className="text-white bg-[#111] min-h-screen flex flex-col items-center">
