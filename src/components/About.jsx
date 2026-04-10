@@ -92,7 +92,10 @@ const About = () => {
           </a>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[68%] sm:top-[77%] md:top-[82%] lg:top-[88%] xl:top-[80%] hidden sm:block max-[810px]:hidden">
+        <div
+          className="absolute left-1/2 -translate-x-1/2 hidden md:block"
+          style={{ bottom: 'clamp(13vh, calc(20vh - 3.94vw), 20vh)' }}
+        >
           <Arrow />
         </div>
       </main>

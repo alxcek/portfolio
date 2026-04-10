@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const Footer = () => {
+const Footer = forwardRef((props, ref) => {
   return (
-    <footer className="relative w-full font-poppins flex flex-col overflow-hidden border-t border-white/15 bg-[#111]">
+    <footer ref={ref} className="fixed bottom-0 left-0 w-full z-0 font-poppins flex flex-col overflow-hidden bg-[#111]">
       <div className="py-8 md:py-12">
         <div className="flex w-full max-w-7xl mx-auto px-6 md:px-12 
                         flex-col md:flex-row justify-between items-start 
@@ -53,6 +53,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;
