@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "composite": true,
-    "noEmit": false,
+    "emitDeclarationOnly": true,
     "declaration": true,
     "declarationMap": true,
 
