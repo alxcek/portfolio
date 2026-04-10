@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -47,10 +47,20 @@ const DynamicPage = ({ componentName }) => {
 
 const App = () => {
   const location = useLocation();
+  const [footerHeight, setFooterHeight] = useState(0);
+
+  const footerRef = useCallback((node) => {
+    if (!node) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setFooterHeight(entry.contentRect.height);
+    });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center bg-[#111]" style={{ marginBottom: footerHeight }}>
         <div className="w-full px-6 max-w-[1920px]">
           <Header />
           <AnimatePresence mode="wait">
@@ -89,9 +99,10 @@ const App = () => {
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </AnimatePresence>
-          <Footer />
+          <hr className="border-white/15" />
         </div>
       </div>
+      <Footer ref={footerRef} />
     </>
   );
 };
