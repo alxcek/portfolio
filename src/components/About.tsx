@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Arrow from "./Arrow";
 
 const About = () => {
@@ -103,4 +103,5 @@ const About = () => {
   );
 };
 
+export { About };
 export default About;

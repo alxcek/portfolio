@@ -1,6 +1,6 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 
-const Footer = forwardRef((props, ref) => {
+const Footer = forwardRef<HTMLElement>((_props, ref) => {
   return (
     <footer ref={ref} className="fixed bottom-0 left-0 w-full z-0 font-poppins flex flex-col overflow-hidden bg-[#111]">
       <div className="py-8 md:py-12">
@@ -55,4 +55,7 @@ const Footer = forwardRef((props, ref) => {
   );
 });
 
+Footer.displayName = "Footer";
+
+export { Footer };
 export default Footer;

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import works from "../data/works.json";
+import type { Project } from "../types";
 
 const Projects = () => {
-  const distributeProjects = (projects) => {
-    const cols = [[], []];
+  const distributeProjects = (projects: Project[]): Project[][] => {
+    const cols: Project[][] = [[], []];
     projects.forEach((project, index) => {
       cols[index % 2].push(project);
     });
@@ -12,7 +13,7 @@ const Projects = () => {
 
   const projectColumns = distributeProjects(works);
 
-  const ProjectCard = ({ project }) => (
+  const ProjectCard = ({ project }: { project: Project }) => (
     <Link
       key={project.id}
       to={project.link}
@@ -68,4 +69,5 @@ const Projects = () => {
   );
 };
 
+export { Projects };
 export default Projects;

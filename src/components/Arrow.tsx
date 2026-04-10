@@ -1,5 +1,3 @@
-import React from "react";
-
 const Arrow = () => (
   <div className="relative">
     <span
@@ -20,7 +18,7 @@ const Arrow = () => (
         animationDelay: '-0.4s'
       }}
     />
-    <style jsx>{`
+    <style>{`
       @keyframes arrowBounce {
         0% {
           opacity: 0;
@@ -38,4 +36,5 @@ const Arrow = () => (
   </div>
 );
 
+export { Arrow };
 export default Arrow;

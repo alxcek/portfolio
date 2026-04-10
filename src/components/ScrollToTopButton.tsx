@@ -1,4 +1,8 @@
-const ScrollToTopButton = ({ visible }) => {
+interface ScrollToTopButtonProps {
+  visible: boolean;
+}
+
+const ScrollToTopButton = ({ visible }: ScrollToTopButtonProps) => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -27,4 +31,5 @@ const ScrollToTopButton = ({ visible }) => {
   );
 };
 
+export { ScrollToTopButton };
 export default ScrollToTopButton;

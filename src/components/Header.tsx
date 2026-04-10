@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -48,4 +47,5 @@ const Header = () => {
   );
 };
 
+export { Header };
 export default Header;
