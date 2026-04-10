@@ -9,6 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
+      if (window.innerWidth < 1024) return;
       if (isScrolling) {
         e.preventDefault();
         return;
@@ -32,10 +33,12 @@ const Home = () => {
     };
 
     const handleTouchStart = (e: TouchEvent) => {
+      if (window.innerWidth < 1024) return;
       window.touchStartY = e.touches[0].clientY;
     };
 
     const handleTouchMove = (e: TouchEvent) => {
+      if (window.innerWidth < 1024) return;
       if (isScrolling || !window.touchStartY) return;
 
       const touchY = e.touches[0].clientY;
