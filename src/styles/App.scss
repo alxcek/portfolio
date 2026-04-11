@@ -10,7 +10,17 @@ html, body {
   justify-content: center;
   align-items: flex-start;
   user-select: none;
+  cursor: none;
+}
 
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .container {

@@ -30,6 +30,7 @@ export const Header = () => {
       <div className="w-10 flex justify-end">
         {!isHome && (
           <button
+            data-cursor-hide
             onClick={goHome}
             className="group relative w-8 h-8 rounded-full transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-90"
             style={{ backgroundColor: "transparent" }}

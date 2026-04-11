@@ -17,7 +17,8 @@ export const Projects = () => {
     <Link
       key={project.id}
       to={project.link}
-      className="cursor-pointer group w-full select-none
+      data-project-card
+      className="cursor-none group w-full select-none
       transition-transform duration-300 ease-out transform
       hover:scale-[0.97]"
     >

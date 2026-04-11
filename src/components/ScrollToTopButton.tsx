@@ -60,6 +60,7 @@ export const ScrollToTopButton = ({ visible }: ScrollToTopButtonProps) => {
 
   return (
     <button
+      data-cursor-hide
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       onMouseEnter={handleMouseEnter}
       className={`fixed bottom-8 right-8 z-50 hidden md:flex items-center justify-center

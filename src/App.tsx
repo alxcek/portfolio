@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/Scroll";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
+import { CustomCursor } from "./components/CustomCursor";
 
 import "./styles/App.scss";
 
@@ -115,6 +116,7 @@ const App = () => {
       {location.pathname !== '/about' && (
         <ScrollToTopButton visible={showScrollTop} />
       )}
+      <CustomCursor />
     </>
   );
 };
