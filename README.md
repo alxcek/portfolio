@@ -1,3 +1,3 @@
-**(aleksacekic.com)[https://aleksacekic.com]**
+**[aleksacekic.com](https://aleksacekic.com)**
 
 my personal website
