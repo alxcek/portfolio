@@ -1,29 +1,21 @@
 [
   {
+    "id": "codemancy",
+    "title": "Codemancy",
+    "description": "Full-Stack Software Engineer",
+    "image": "/assets/main_logos/codemancy-1080p.jpg",
+    "link": "/codemancy",
+    "tags": ["2026-Present"],
+    "component": "Codemancy",
+    "locked": true
+  },
+  {
     "id": "esl",
     "title": "Engineering Software Lab",
-    "description": "Software Engineer at Engineering Software Lab, working on backend systems in the healthcare domain as part of Engineering Group’s digital transformation initiatives",
+    "description": "Software Engineer",
     "image": "/assets/main_logos/eng-logo.png",
     "link": "/eng",
-    "tags": ["Software Engineering", "Healthcare", "2022-Present"],
+    "tags": ["Software Engineering", "Healthcare", "2022-2026"],
     "component": "Esl"
-  },
-  {
-    "id": "fitness",
-    "title": "Fitness App",
-    "description": "Full-stack Fitness Tracking Application developed as part of my University Thesis",
-    "image": "/assets/fitness_app/fitness_login.png",
-    "link": "/fitness",
-    "tags": ["University", "Thesis", "Full-stack", "2023"],
-    "component": "Fitness"
-  },
-  {
-    "id": "met",
-    "title": "Metropolitan University",
-    "description": "Full-stack Developer in a Work-Study program at Metropolitan University, contributing to the development of academic web applications and internal tools",
-    "image": "/assets/main_logos/uni-logo.png",
-    "link": "/met",
-    "tags": ["Software Developer", "Work-Study", "2020-2022"],
-    "component": "Met"
   }
 ]

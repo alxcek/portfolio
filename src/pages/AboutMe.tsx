@@ -1,3 +1,42 @@
+import { experience, education } from '../data/timeline';
+import { TimelineItem } from '../types/timeline';
+
+const TimelineSection = ({ title, items }: { title: string; items: TimelineItem[] }) => (
+    <section className="mb-12 sm:mb-16">
+        <h2 className="text-sm font-medium uppercase tracking-wider text-gray-500 mb-5">
+            {title}
+        </h2>
+
+        <ul>
+            {items.map((item) => (
+                <li
+                    key={`${item.name}-${item.year}`}
+                    className="flex items-center gap-4 py-4 border-b border-white/10"
+                >
+                    {item.icon ? (
+                        <img
+                            src={item.icon}
+                            alt={`${item.name} logo`}
+                            className="w-10 h-10 rounded-md object-cover shrink-0 bg-white/5"
+                        />
+                    ) : (
+                        <span className="w-10 h-10 rounded-md shrink-0 bg-white/5" aria-hidden="true" />
+                    )}
+
+                    <p className="text-gray-400 text-xs sm:text-sm">
+                        <span className="font-bold text-white">{item.name}</span>
+                        <span className="hidden sm:inline"> / {item.role}</span>
+                    </p>
+
+                    <span className="ml-auto text-gray-500 text-xs whitespace-nowrap pl-4">
+                        {item.year}
+                    </span>
+                </li>
+            ))}
+        </ul>
+    </section>
+);
+
 const AboutMe = () => {
     return (
         <div className="w-full">
@@ -66,45 +105,9 @@ const AboutMe = () => {
                     </ul>
                 </section>
 
-                <section className="mb-20">
-                    <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">EDUCATION</h2>
+                <TimelineSection title="Experience" items={experience} />
 
-                    <div className="space-y-4">
-                        <div className="flex justify-between">
-                            <div>
-                                <p className="font-medium text-white">
-                                    University of Niš - Faculty of Electronics
-                                </p>
-                                <p className="text-gray-400 text-sm">
-                                    MSc Artificial Intelligence & Machine Learning
-                                </p>
-                            </div>
-                            <div className="flex items-end">
-                                <span className="text-gray-500 text-sm whitespace-nowrap ml-6">
-                                    2025 – Present
-                                </span>
-                            </div>
-                        </div>
-
-                        <div className="border-t border-white/10"></div>
-
-                        <div className="flex justify-between">
-                            <div>
-                                <p className="font-medium text-white">
-                                    Metropolitan University - Faculty of Computer Science
-                                </p>
-                                <p className="text-gray-400 text-sm">
-                                    BSc Computer Software Engineering
-                                </p>
-                            </div>
-                            <div className="flex items-end">
-                                <span className="text-gray-500 text-sm whitespace-nowrap ml-6">
-                                    2019 – 2024
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <TimelineSection title="Education" items={education} />
 
             </div>
         </div>

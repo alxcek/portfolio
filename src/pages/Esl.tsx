@@ -25,7 +25,7 @@ const Esl = () => {
                   <div className="flex flex-wrap gap-y-4 gap-x-16">
                     <div>
                       <div className="text-gray-400 mb-1 text-base uppercase">Duration</div>
-                      <div>Sep 2022 - Present</div>
+                      <div>Sep 2022 - June 2026</div>
                     </div>
                     <div>
                       <div className="text-gray-400 mb-1 text-base uppercase">Role</div>

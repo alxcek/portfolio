@@ -93,7 +93,7 @@ const App = () => {
                 }
               />
 
-              {works.map((project) => (
+              {works.filter((project) => !project.locked).map((project) => (
                 <Route
                   key={project.id}
                   path={project.link}
