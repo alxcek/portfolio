@@ -1,4 +1,4 @@
-import { experience, education } from '../data/timeline';
+import { education } from '../data/timeline';
 import { TimelineItem } from '../types/timeline';
 
 const TimelineSection = ({ title, items }: { title: string; items: TimelineItem[] }) => (
@@ -40,14 +40,6 @@ const TimelineSection = ({ title, items }: { title: string; items: TimelineItem[
 const AboutMe = () => {
     return (
         <div className="w-full">
-
-            {/* Image /*}
-      {/* <img
-        src="https://placehold.co/1920x1080"
-        alt="me"
-        className="w-full aspect-[4/3] sm:aspect-video lg:aspect-[21/9] object-cover object-center opacity-90"
-      /> */}
-
             <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 mt-10 sm:mt-14">
                 <section className="mb-12 sm:mb-16">
                     <h1 className="text-3xl sm:text-5xl font-bold text-white mb-6">
@@ -55,7 +47,7 @@ const AboutMe = () => {
                     </h1>
 
                     <p className="text-gray-300 leading-relaxed text-[16px] sm:text-[17px]">
-                        I'm Aleksa — a Software Engineer from Niš who grew up around computers,
+                        I’m Aleksa — a Software Engineer from Niš who grew up around computers,
                         video games, and the natural urge to take things apart just to see how
                         they work. That curiosity slowly turned into a love for programming, and
                         eventually into a career where I get to solve problems, build systems,
@@ -104,8 +96,6 @@ const AboutMe = () => {
                         <li>▸ Experimenting with machine learning models and planning my next bigger project.</li>
                     </ul>
                 </section>
-
-                <TimelineSection title="Experience" items={experience} />
 
                 <TimelineSection title="Education" items={education} />
 

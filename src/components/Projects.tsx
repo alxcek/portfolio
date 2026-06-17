@@ -1,6 +1,5 @@
-import clsx from "clsx";
 import { Link } from "react-router-dom";
-import works from "../data/works.json";
+import { works } from "../data/works";
 import type { Project } from "../types/project";
 
 const LockIcon = () => (
@@ -113,18 +112,25 @@ export const Projects = () => {
 
   return (
     <section
-      className={clsx(
-        "bg-[#111] text-gray-500 grid relative z-10 col-start-1 col-end-13 md:grid-cols-2 gap-8 mb-14",
-        works.length <= 2 && "min-h-screen content-center"
-      )}
+      id="works"
+      aria-labelledby="works-heading"
+      className="bg-[#111] text-gray-500 relative z-10 mb-14 scroll-mt-12"
     >
-      {projectColumns.map((columnProjects, colIndex) => (
-        <div key={colIndex} className="flex flex-col gap-6">
-          {columnProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      ))}
+      <h2
+        id="works-heading"
+        className="text-2xl sm:text-3xl font-bold text-white mb-10"
+      >
+        Works
+      </h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        {projectColumns.map((columnProjects, colIndex) => (
+          <div key={colIndex} className="flex flex-col gap-6">
+            {columnProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

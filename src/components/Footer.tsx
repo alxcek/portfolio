@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 export const Footer = forwardRef<HTMLElement>((_props, ref) => {
   return (
-    <footer ref={ref} className="fixed bottom-0 left-0 w-full z-0 font-poppins flex flex-col overflow-hidden bg-[#111]">
+    <footer ref={ref} className="fixed bottom-0 left-0 w-full z-0 flex flex-col overflow-hidden bg-[#111]">
       <div className="py-8 md:py-12">
         <div className="flex w-full max-w-7xl mx-auto px-6 md:px-12 
                         flex-col md:flex-row justify-between items-start 
@@ -12,7 +12,7 @@ export const Footer = forwardRef<HTMLElement>((_props, ref) => {
             <h3 className="text-xl md:text-2xl font-normal mb-3">
               Thanks for visiting!
             </h3>
-            <p className="text-sm text-white/60 mb-4">aleksa cekić © 2025</p>
+            <p className="text-sm text-white/60 mb-4">aleksa cekić © 2026</p>
           </div>
           <div className="flex flex-row gap-16">
             <div>

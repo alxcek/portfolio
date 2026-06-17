@@ -50,23 +50,6 @@ export const About = () => {
               Design
             </p>
           </div>
-          {/* <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 text-gray-400 text-xs sm:text-sm">
-            <div className="flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 10c0 5-9 11-9 11S3 15 3 10a9 9 0 1118 0z" />
-              </svg>
-              <span>Niš, Serbia</span>
-            </div>
-
-            <div className="flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
-              </svg>
-              <span>{new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
-            </div>
-          </div> */}
         </div>
 
         <div className="text-center text-base md:text-lg uppercase tracking-wider flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -76,7 +59,7 @@ export const About = () => {
           >
             Email
           </a>
-          <span className="text-gray-400 hidden sm:inline">///</span>
+          <span className="text-gray-400 hidden sm:inline">{"///"}</span>
           <a
             href="https://www.linkedin.com/in/alcekic"
             target="_blank"
@@ -85,7 +68,7 @@ export const About = () => {
           >
             LinkedIn
           </a>
-          <span className="text-gray-400 hidden sm:inline">///</span>
+          <span className="text-gray-400 hidden sm:inline">{"///"}</span>
           <a
             href="https://github.com/alxcek"
             target="_blank"

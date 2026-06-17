@@ -12,7 +12,7 @@ import "./styles/App.scss";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 
-import works from "./data/works.json";
+import { works } from "./data/works";
 
 const pages = import.meta.glob<{ default: React.ComponentType }>("./pages/*.tsx", { eager: true });
 
@@ -30,7 +30,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const DynamicPage = ({ componentName }: { componentName: string }) => {
+const DynamicPage = ({ componentName }: { componentName?: string }) => {
   const filePath = `./pages/${componentName}.tsx`;
   const module = pages[filePath];
 

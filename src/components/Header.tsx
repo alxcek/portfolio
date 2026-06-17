@@ -9,23 +9,39 @@ export const Header = () => {
     navigate("/");
   };
 
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const goToSection = (id: string) => {
+    if (isHome) {
+      scrollToSection(id);
+    } else {
+      navigate("/", { state: { scrollTo: id } });
+    }
+  };
+
+  const linkClass =
+    "relative cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out " +
+    "after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full after:bg-[#FF4D4D] " +
+    "after:origin-left after:scale-x-0 after:transition-transform after:duration-700 after:ease-out " +
+    "hover:after:scale-x-100";
+
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between bg-[#111] border-b border-white/15 px-6 py-2 text-sm shadow-sm h-12">
-      <div
-        className="flex-shrink-0 font-light text-md cursor-pointer hover:text-[#FF4D4D] transition-colors duration-300 ease-in-out"
-        onClick={() => navigate("/about")}
-      >
-        Aleksa Cekić
-      </div>
-      <div className="flex items-center whitespace-nowrap text-sm">
-        <span className="mr-1 hidden sm:inline">Software Engineer</span>
-        {/* <div className="flex flex-col items-center justify-center text-gray-400" style={{ lineHeight: '0.7', gap: 0, margin: '0 4px' }}>
-          <span style={{ lineHeight: '0.7', fontSize: '10px' }}>•</span>
-          <span style={{ lineHeight: '0.7', fontSize: '10px' }}>•</span>
-          <span style={{ lineHeight: '0.7', fontSize: '10px' }}>•</span>
-        </div> */}
-        <span className="text-xs hidden md:inline">@</span>
-        <span className="ml-1 hidden md:inline">Niš, Serbia</span>
+      <div className="w-10 flex-shrink-0" aria-hidden="true" />
+      <div className="flex items-center gap-4 sm:gap-8 whitespace-nowrap font-light text-sm">
+        <button type="button" className={linkClass} onClick={() => navigate("/about")}>
+          About
+        </button>
+        <button type="button" className={linkClass} onClick={() => goToSection("works")}>
+          Works
+        </button>
+        <button type="button" className={linkClass} onClick={() => goToSection("experience")}>
+          Experience
+        </button>
       </div>
       <div className="w-10 flex justify-end">
         {!isHome && (

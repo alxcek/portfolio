@@ -5,6 +5,6 @@ export interface Project {
   image: string;
   link: string;
   tags?: string[];
-  component: string;
+  component?: string;
   locked?: boolean;
 }

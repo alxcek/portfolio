@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, type CSSProperties } from "react";
 
 interface ScrollToTopButtonProps {
   visible: boolean;
@@ -35,7 +35,7 @@ export const ScrollToTopButton = ({ visible }: ScrollToTopButtonProps) => {
     }, 350);
   }, [animating]);
 
-  const getStyle = (isActive: boolean): React.CSSProperties => {
+  const getStyle = (isActive: boolean): CSSProperties => {
     if (isActive && !animating) {
       return { transform: "translateY(0)", opacity: 1 };
     }
