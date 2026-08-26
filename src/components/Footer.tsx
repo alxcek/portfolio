@@ -4,7 +4,7 @@ export const Footer = forwardRef<HTMLElement>((_props, ref) => {
   return (
     <footer ref={ref} className="fixed bottom-0 left-0 w-full z-0 flex flex-col overflow-hidden bg-[#111]">
       <div className="py-8 md:py-12">
-        <div className="flex w-full max-w-7xl mx-auto px-6 md:px-12 
+        <div className="flex w-full max-w-6xl mx-auto px-5 sm:px-8 lg:px-10
                         flex-col md:flex-row justify-between items-start 
                         gap-8">
           

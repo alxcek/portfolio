@@ -30,7 +30,7 @@ export const About = () => {
   return (
     <section className="flex items-center justify-center min-h-screen">
       <main
-        className="px-4 md:px-8 max-w-4xl w-full transition-opacity duration-200 ease-out"
+        className="max-w-6xl mx-auto w-full px-5 sm:px-8 lg:px-10 transition-opacity duration-200 ease-out"
         style={{
           opacity: scrollOpacity,
           pointerEvents: scrollOpacity < 0.1 ? "none" : "auto",

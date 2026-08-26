@@ -10,7 +10,6 @@ import { ScrollToTopButton } from "./components/ScrollToTopButton";
 import "./styles/App.scss";
 
 import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe";
 
 import { works } from "./data/works";
 
@@ -70,7 +69,7 @@ const App = () => {
   return (
     <>
       <div className="relative z-10 flex flex-col items-center bg-[#111]" style={{ marginBottom: footerHeight }}>
-        <div className="w-full px-6 max-w-[1920px]">
+        <div className="w-full max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
           <Header />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
@@ -80,15 +79,6 @@ const App = () => {
                 element={
                   <PageTransition>
                     <Home />
-                  </PageTransition>
-                }
-              />
-
-              <Route
-                path="/about"
-                element={
-                  <PageTransition>
-                    <AboutMe />
                   </PageTransition>
                 }
               />
@@ -112,9 +102,7 @@ const App = () => {
         </div>
       </div>
       <Footer ref={footerRef} />
-      {location.pathname !== '/about' && (
-        <ScrollToTopButton visible={showScrollTop} />
-      )}
+      <ScrollToTopButton visible={showScrollTop} />
     </>
   );
 };
