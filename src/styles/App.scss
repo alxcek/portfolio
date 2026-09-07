@@ -1,7 +1,7 @@
 html, body {
   background: #111;
   color: #FCFCFC;
-  font-family: "Inter", sans-serif;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   margin: 0;
   padding: 0;
   padding-top: env(safe-area-inset-top);
@@ -9,12 +9,22 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  user-select: none;
+  scroll-behavior: smooth;
 
 }
 
 h1, p {
   margin: 1rem 0;
+}
+
+::selection {
+  background: #FF4D4D;
+  color: #111;
+}
+
+::-moz-selection {
+  background: #FF4D4D;
+  color: #111;
 }
 
 :root {

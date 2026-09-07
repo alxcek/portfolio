@@ -86,7 +86,7 @@ export const Projects = () => {
         <div
           key={project.id}
           aria-disabled="true"
-          className="group w-full select-none cursor-not-allowed
+          className="group w-full cursor-not-allowed
           transition-transform duration-300 ease-out transform
           hover:scale-[0.97]"
         >
@@ -100,7 +100,7 @@ export const Projects = () => {
       <Link
         key={project.id}
         to={project.link}
-        className="cursor-pointer group w-full select-none
+        className="cursor-pointer group w-full
         transition-transform duration-300 ease-out transform
         hover:scale-[0.97]"
       >
@@ -114,7 +114,7 @@ export const Projects = () => {
     <section
       id="works"
       aria-labelledby="works-heading"
-      className="bg-[#111] text-gray-500 relative z-10 mb-14 scroll-mt-12"
+      className="bg-[#111] text-gray-500 relative z-10 mb-14 scroll-mt-16"
     >
       <h2
         id="works-heading"

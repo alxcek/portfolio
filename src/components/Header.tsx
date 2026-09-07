@@ -1,3 +1,4 @@
+import type { MouseEvent } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const GithubIcon = () => (
@@ -45,18 +46,12 @@ export const Header = () => {
     }
   };
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const goToSection = (id: string) => {
-    if (isHome) {
-      scrollToSection(id);
-    } else {
+  const handleSectionClick = (id: string) => (e: MouseEvent) => {
+    if (!isHome) {
+      e.preventDefault();
       navigate("/", { state: { scrollTo: id } });
     }
+    // else: let the native anchor + CSS scroll-behavior: smooth handle it
   };
 
   const linkClass =
@@ -79,12 +74,12 @@ export const Header = () => {
       </button>
 
       <div className="flex items-center gap-3 sm:gap-8 whitespace-nowrap font-light text-xs sm:text-sm">
-        <button type="button" className={linkClass} onClick={() => goToSection("works")}>
+        <a href="#works" className={linkClass} onClick={handleSectionClick("works")}>
           projects
-        </button>
-        <button type="button" className={linkClass} onClick={() => goToSection("experience")}>
+        </a>
+        <a href="#experience" className={linkClass} onClick={handleSectionClick("experience")}>
           experience
-        </button>
+        </a>
         <a
           href="https://github.com/alxcek"
           target="_blank"

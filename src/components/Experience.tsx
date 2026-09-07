@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { experience } from '../data/experience';
+import { education } from '../data/timeline';
 import type { Experience as ExperienceItem } from '../types/experience';
 
 const GithubIcon = () => (
@@ -54,7 +55,7 @@ export const Experience = () => {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="relative z-10 bg-[#111] mb-14 pt-10 scroll-mt-12"
+      className="relative z-10 bg-[#111] mb-14 pt-10 scroll-mt-16"
     >
       <h2
         id="experience-heading"
@@ -103,6 +104,38 @@ export const Experience = () => {
             );
           })}
         </ol>
+      </div>
+
+      <div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold text-white mb-6">Education</h3>
+
+        <ul>
+          {education.map((item) => (
+            <li
+              key={`${item.name}-${item.year}`}
+              className="flex items-center gap-4 py-4 border-b border-white/10"
+            >
+              {item.icon ? (
+                <img
+                  src={item.icon}
+                  alt={`${item.name} logo`}
+                  className="w-10 h-10 rounded-md object-cover shrink-0 bg-white/5"
+                />
+              ) : (
+                <span className="w-10 h-10 rounded-md shrink-0 bg-white/5" aria-hidden="true" />
+              )}
+
+              <p className="text-gray-400 text-xs sm:text-sm">
+                <span className="font-bold text-white">{item.name}</span>
+                <span className="hidden sm:inline"> / {item.role}</span>
+              </p>
+
+              <span className="ml-auto text-gray-500 text-xs whitespace-nowrap pl-4">
+                {item.year}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
